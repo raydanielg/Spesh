@@ -21,7 +21,6 @@
             {{-- CTA --}}
             <div class="hidden lg:flex items-center gap-3">
                 @guest
-                    <a href="{{ route('login') }}" class="font-heading font-semibold text-sm text-spesh-navy hover:text-spesh-green transition-colors px-4 py-2">Login</a>
                     <a href="{{ route('quote') }}" class="inline-flex items-center gap-2 font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
                         <i class="fas fa-file-invoice-dollar text-xs"></i>
                         <span>Get Quote</span>
@@ -52,7 +51,6 @@
             <a href="#contact" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">Contact</a>
             <div class="pt-3 border-t border-gray-100 flex gap-3">
                 @guest
-                    <a href="{{ route('login') }}" class="flex-1 text-center px-4 py-2.5 rounded-lg font-heading font-semibold text-sm text-spesh-navy border border-spesh-gray">Login</a>
                     <a href="{{ route('quote') }}" class="flex-1 text-center px-4 py-2.5 rounded-lg font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark">Get Quote</a>
                 @else
                     <a href="{{ route('home') }}" class="flex-1 text-center px-4 py-2.5 rounded-lg font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark">Dashboard</a>
