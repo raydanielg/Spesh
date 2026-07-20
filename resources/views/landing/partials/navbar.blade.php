@@ -21,7 +21,7 @@
             {{-- CTA --}}
             <div class="hidden lg:flex items-center gap-3">
                 @guest
-                    <a href="{{ route('quote') }}" class="inline-flex items-center gap-2 font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
+                    <a href="{{ route('quote') }}" class="inline-flex items-center gap-2 font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
                         <i class="fas fa-file-invoice-dollar text-xs"></i>
                         <span>Get Quote</span>
                     </a>
