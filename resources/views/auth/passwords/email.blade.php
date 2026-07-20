@@ -7,8 +7,8 @@
     <div class="bg-white rounded-none sm:rounded-2xl shadow-none sm:shadow-xl border-0 sm:border border-gray-100 overflow-hidden min-h-screen sm:min-h-0">
         {{-- Header --}}
         <div class="px-6 sm:px-8 py-8 text-center border-b border-gray-100">
-            <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-gradient-to-br from-emerald-600 to-emerald-800 flex items-center justify-center shadow-lg">
-                <svg class="w-8 h-8 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-6 6v0a6 6 0 01-6-6V9a6 6 0 016-6v0a6 6 0 016 6z"/></svg>
+            <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-gradient-to-br from-navy-700 to-navy-800 flex items-center justify-center shadow-lg">
+                <svg class="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 7a2 2 0 012 2m4 0a6 6 0 01-6 6v0a6 6 0 01-6-6V9a6 6 0 016-6v0a6 6 0 016 6z"/></svg>
             </div>
             <h2 class="text-2xl font-extrabold text-gray-800">Reset Password</h2>
             <p class="text-gray-400 text-sm mt-1">We'll send you a reset link</p>
