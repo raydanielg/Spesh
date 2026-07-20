@@ -18,7 +18,7 @@
                     A regional leader in logistics — professionalism, innovation, and outstanding customer experience.
                 </p>
                 <div class="flex items-center gap-2 text-xs text-white/40 mb-5">
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <i class="fas fa-circle-check text-spesh-green"></i>
                     <span>Established 2021</span>
                 </div>
                 {{-- Social Media --}}
