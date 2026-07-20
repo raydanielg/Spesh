@@ -78,7 +78,11 @@
         <div class="w-full max-w-5xl grid lg:grid-cols-2 gap-0 lg:gap-8 items-center">
 
             {{-- Left Column: Branding + Features (hidden on mobile) --}}
-            <div class="hidden lg:flex flex-col justify-center relative overflow-hidden rounded-3xl h-[600px] shadow-2xl bg-gradient-to-br from-navy-800 to-navy-700">
+            <div class="hidden lg:flex flex-col justify-center relative overflow-hidden rounded-3xl h-[600px] shadow-2xl">
+                {{-- Background image --}}
+                <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('1380.jpg') }}');"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-navy-800/85 via-navy-700/75 to-navy-600/70"></div>
+
                 {{-- Decorative dots --}}
                 <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 24px 24px;"></div>
                 <div class="absolute top-0 right-0 w-72 h-72 bg-gold-500/15 rounded-full blur-3xl pulse-glow"></div>
