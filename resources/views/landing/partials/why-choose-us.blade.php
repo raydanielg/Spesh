@@ -25,41 +25,76 @@
         </div>
 
         <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-            {{-- Left: Image --}}
-            <div class="reveal relative">
-                <div class="relative rounded-2xl overflow-hidden shadow-2xl group">
-                    <img src="{{ asset('1374 (1).jpg') }}" alt="SPESH Logistics Operations" class="w-full h-[400px] lg:h-[500px] object-cover group-hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-spesh-navy-dark/80 via-transparent to-transparent"></div>
+            {{-- Left: Floating Cards --}}
+            <div class="reveal relative h-[500px] lg:h-[560px]">
+                {{-- Background image --}}
+                <div class="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
+                    <img src="{{ asset('1374 (1).jpg') }}" alt="SPESH Logistics Operations" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-spesh-navy-dark/90 via-spesh-navy/40 to-spesh-navy/20"></div>
+                </div>
 
-                    {{-- Floating badge --}}
-                    <div class="absolute top-6 left-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-4 py-3 flex items-center gap-3">
-                        <div class="w-10 h-10 rounded-lg bg-spesh-green flex items-center justify-center">
-                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                {{-- Floating Card 1: 24h Response --}}
+                <div class="float-card-1 absolute top-8 left-4 sm:left-6 z-20">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl flex items-center gap-3 w-44">
+                        <div class="w-11 h-11 rounded-xl bg-spesh-green flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-bolt text-lg text-white"></i>
                         </div>
                         <div>
-                            <p class="font-heading font-bold text-lg text-white leading-none">24h</p>
-                            <p class="font-body text-xs text-white/60">Avg Response</p>
-                        </div>
-                    </div>
-
-                    {{-- Bottom stats --}}
-                    <div class="absolute bottom-6 left-6 right-6 grid grid-cols-3 gap-3">
-                        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 text-center">
-                            <p class="font-heading font-extrabold text-2xl text-spesh-green-light">100%</p>
-                            <p class="font-body text-xs text-white/50 mt-0.5">On-time</p>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 text-center">
-                            <p class="font-heading font-extrabold text-2xl text-spesh-green-light">8+</p>
-                            <p class="font-body text-xs text-white/50 mt-0.5">Clients</p>
-                        </div>
-                        <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-3 text-center">
-                            <p class="font-heading font-extrabold text-2xl text-spesh-green-light">5+</p>
-                            <p class="font-body text-xs text-white/50 mt-0.5">Sectors</p>
+                            <p class="font-heading font-extrabold text-xl text-white leading-none">24h</p>
+                            <p class="font-body text-xs text-white/60 mt-0.5">Avg Response Time</p>
                         </div>
                     </div>
                 </div>
 
-                {{-- Decorative accent --}}
+                {{-- Floating Card 2: 100% On-time --}}
+                <div class="float-card-2 absolute top-24 right-4 sm:right-6 z-20">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl flex items-center gap-3 w-48">
+                        <div class="w-11 h-11 rounded-xl bg-spesh-ocean flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-circle-check text-lg text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-heading font-extrabold text-xl text-white leading-none">100%</p>
+                            <p class="font-body text-xs text-white/60 mt-0.5">On-time Delivery</p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Floating Card 3: Trusted --}}
+                <div class="float-card-3 absolute bottom-28 left-4 sm:left-8 z-20">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl flex items-center gap-3 w-52">
+                        <div class="w-11 h-11 rounded-xl bg-spesh-purple flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-users text-lg text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-heading font-extrabold text-xl text-white leading-none">8+</p>
+                            <p class="font-body text-xs text-white/60 mt-0.5">Trusted Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Floating Card 4: Sectors --}}
+                <div class="float-card-4 absolute bottom-8 right-4 sm:right-10 z-20">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 shadow-xl flex items-center gap-3 w-48">
+                        <div class="w-11 h-11 rounded-xl bg-spesh-green-light flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-layer-group text-lg text-white"></i>
+                        </div>
+                        <div>
+                            <p class="font-heading font-extrabold text-xl text-white leading-none">5+</p>
+                            <p class="font-body text-xs text-white/60 mt-0.5">Sectors Served</p>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Center badge --}}
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                    <div class="w-20 h-20 rounded-full bg-spesh-green/20 backdrop-blur-md border-2 border-spesh-green/40 flex items-center justify-center shadow-2xl">
+                        <div class="w-14 h-14 rounded-full bg-spesh-green flex items-center justify-center">
+                            <i class="fas fa-truck-fast text-2xl text-white"></i>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Decorative accents --}}
                 <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-spesh-green/20 rounded-2xl -z-10"></div>
                 <div class="absolute -top-4 -left-4 w-20 h-20 bg-spesh-purple/30 rounded-full -z-10"></div>
             </div>
