@@ -23,10 +23,4 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
-    <url>
-        <loc>{{ config('app.url') }}/register</loc>
-        <lastmod>{{ date('Y-m-d') }}</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
 </urlset>

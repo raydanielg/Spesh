@@ -10,7 +10,7 @@ Route::get('/quote', function () {
     return view('landing.quote');
 })->name('quote');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
