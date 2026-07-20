@@ -52,12 +52,12 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#services" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-heading font-semibold text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
-                        <i class="fas fa-arrow-right text-sm"></i>
+                    <a href="#services" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
+                        <i class="fas fa-arrow-right text-xs"></i>
                         Explore Services
                     </a>
-                    <a href="{{ route('quote') }}" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-heading font-semibold text-spesh-navy bg-white hover:bg-spesh-gray shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
-                        <i class="fas fa-file-invoice-dollar text-sm"></i>
+                    <a href="{{ route('quote') }}" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg font-heading font-semibold text-sm text-spesh-navy bg-white hover:bg-spesh-gray shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
+                        <i class="fas fa-file-invoice-dollar text-xs"></i>
                         Get Quote
                     </a>
                 </div>
