@@ -58,61 +58,51 @@
             <div class="reveal" style="transition-delay:0.2s;">
                 <h3 class="font-heading font-bold text-2xl text-spesh-navy mb-8 text-center lg:text-left">Our Core Values</h3>
 
-                <div class="relative">
-                    {{-- Vertical connecting line --}}
-                    <div class="absolute left-6 top-6 bottom-6 w-0.5 bg-gradient-to-b from-spesh-green via-spesh-purple to-spesh-ocean opacity-30"></div>
-
+                <ol class="relative text-spesh-body border-s border-gray-200">
                     {{-- Step 1: Innovation --}}
-                    <div class="stepper-item relative flex items-start gap-5 mb-8 group reveal">
-                        <div class="flex-shrink-0 relative z-10">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-spesh-green to-spesh-green-dark flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <span class="font-heading font-extrabold text-white text-lg">I</span>
-                            </div>
-                            <div class="absolute inset-0 rounded-full bg-spesh-green/20 animate-ping opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        </div>
-                        <div class="flex-1 bg-white rounded-xl p-5 shadow-md border border-gray-100 group-hover:border-spesh-green/40 group-hover:shadow-xl transition-all duration-300">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-lightbulb text-base text-spesh-green"></i>
-                                <h4 class="font-heading font-bold text-lg text-spesh-navy">Innovation</h4>
-                            </div>
+                    <li class="mb-10 ms-7 group reveal">
+                        <span class="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-white bg-spesh-green/10 text-spesh-green group-hover:bg-spesh-green group-hover:text-white transition-all duration-300 group-hover:scale-110 shadow-sm">
+                            <i class="fas fa-lightbulb text-sm"></i>
+                        </span>
+                        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 group-hover:border-spesh-green/40 group-hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-heading font-bold text-lg text-spesh-navy leading-tight mb-1">Innovation</h3>
                             <p class="font-body text-sm text-spesh-body leading-relaxed">Embracing technology and creative solutions to stay ahead in a dynamic logistics landscape.</p>
                         </div>
-                    </div>
+                    </li>
 
                     {{-- Step 2: Professionalism --}}
-                    <div class="stepper-item relative flex items-start gap-5 mb-8 group reveal" style="transition-delay:0.15s;">
-                        <div class="flex-shrink-0 relative z-10">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-spesh-purple to-spesh-purple-dark flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <span class="font-heading font-extrabold text-white text-lg">II</span>
-                            </div>
-                            <div class="absolute inset-0 rounded-full bg-spesh-purple/20 animate-ping opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        </div>
-                        <div class="flex-1 bg-white rounded-xl p-5 shadow-md border border-gray-100 group-hover:border-spesh-purple/40 group-hover:shadow-xl transition-all duration-300">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-user-tie text-base text-spesh-purple"></i>
-                                <h4 class="font-heading font-bold text-lg text-spesh-navy">Professionalism</h4>
-                            </div>
+                    <li class="mb-10 ms-7 group reveal" style="transition-delay:0.15s;">
+                        <span class="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-white bg-spesh-purple/10 text-spesh-purple group-hover:bg-spesh-purple group-hover:text-white transition-all duration-300 group-hover:scale-110 shadow-sm">
+                            <i class="fas fa-user-tie text-sm"></i>
+                        </span>
+                        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 group-hover:border-spesh-purple/40 group-hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-heading font-bold text-lg text-spesh-navy leading-tight mb-1">Professionalism</h3>
                             <p class="font-body text-sm text-spesh-body leading-relaxed">Maintaining the highest standards in every interaction, transaction, and delivery we make.</p>
                         </div>
-                    </div>
+                    </li>
 
                     {{-- Step 3: Transparency --}}
-                    <div class="stepper-item relative flex items-start gap-5 group reveal" style="transition-delay:0.3s;">
-                        <div class="flex-shrink-0 relative z-10">
-                            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-spesh-ocean to-spesh-ocean-dark flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <span class="font-heading font-extrabold text-white text-base">III</span>
-                            </div>
-                            <div class="absolute inset-0 rounded-full bg-spesh-ocean/20 animate-ping opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        </div>
-                        <div class="flex-1 bg-white rounded-xl p-5 shadow-md border border-gray-100 group-hover:border-spesh-ocean/40 group-hover:shadow-xl transition-all duration-300">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-handshake text-base text-spesh-ocean"></i>
-                                <h4 class="font-heading font-bold text-lg text-spesh-navy">Transparency</h4>
-                            </div>
+                    <li class="mb-10 ms-7 group reveal" style="transition-delay:0.3s;">
+                        <span class="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-white bg-spesh-ocean/10 text-spesh-ocean group-hover:bg-spesh-ocean group-hover:text-white transition-all duration-300 group-hover:scale-110 shadow-sm">
+                            <i class="fas fa-handshake text-sm"></i>
+                        </span>
+                        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 group-hover:border-spesh-ocean/40 group-hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-heading font-bold text-lg text-spesh-navy leading-tight mb-1">Transparency</h3>
                             <p class="font-body text-sm text-spesh-body leading-relaxed">Open, honest, and accountable in all our operations — building trust with every client.</p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+
+                    {{-- Step 4: Customer Experience --}}
+                    <li class="ms-7 group reveal" style="transition-delay:0.45s;">
+                        <span class="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-white bg-spesh-green-light/10 text-spesh-green-light group-hover:bg-spesh-green-light group-hover:text-white transition-all duration-300 group-hover:scale-110 shadow-sm">
+                            <i class="fas fa-heart text-sm"></i>
+                        </span>
+                        <div class="bg-white rounded-xl p-5 shadow-sm border border-gray-100 group-hover:border-spesh-green-light/40 group-hover:shadow-lg transition-all duration-300">
+                            <h3 class="font-heading font-bold text-lg text-spesh-navy leading-tight mb-1">Customer Experience</h3>
+                            <p class="font-body text-sm text-spesh-body leading-relaxed">Delivering outstanding service that exceeds expectations and builds lasting partnerships.</p>
+                        </div>
+                    </li>
+                </ol>
             </div>
         </div>
     </div>
