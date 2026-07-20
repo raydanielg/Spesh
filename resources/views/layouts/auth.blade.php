@@ -73,6 +73,10 @@
 
             {{-- Left Column: Branding + Features (hidden on mobile) --}}
             <div class="hidden lg:flex flex-col justify-center relative overflow-hidden rounded-3xl h-[600px] shadow-2xl bg-gradient-to-br from-navy-800 to-navy-700">
+                {{-- Background image --}}
+                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('{{ asset('1380.jpg') }}');"></div>
+                <div class="absolute inset-0 bg-gradient-to-br from-navy-800/90 via-navy-700/85 to-navy-600/80"></div>
+
                 {{-- Decorative dots --}}
                 <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 24px 24px;"></div>
                 <div class="absolute top-0 right-0 w-72 h-72 bg-gold-500/15 rounded-full blur-3xl pulse-glow"></div>
@@ -82,12 +86,12 @@
                 <div class="relative z-10 p-12 flex flex-col justify-center h-full">
                     {{-- Logo --}}
                     <div class="flex items-center gap-3 mb-8 slide-up">
-                        <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                            <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                        <div class="w-16 h-16 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
+                            <img src="{{ asset('logo.png') }}" alt="SPESH Company Limited" class="w-full h-full object-contain">
                         </div>
                         <div>
-                            <h1 class="text-2xl font-extrabold text-white tracking-tight">{{ config('app.name', 'SPESH') }}</h1>
-                            <p class="text-gold-300 text-sm font-medium">Smart Platform for Education & Services Hub</p>
+                            <h1 class="text-2xl font-extrabold text-white tracking-tight">SPESH</h1>
+                            <p class="text-gold-300 text-sm font-medium">Company Limited</p>
                         </div>
                     </div>
 
@@ -103,7 +107,7 @@
                         <div class="slide-up-delay-2 space-y-4">
                             <div class="flex items-start gap-3 float-text" style="animation-delay: 0s;">
                                 <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                                    <i class="fas fa-gauge-high text-gold-400"></i>
                                 </div>
                                 <div>
                                     <p class="text-white font-semibold text-base">Smart Dashboard</p>
@@ -113,7 +117,7 @@
 
                             <div class="flex items-start gap-3 float-text" style="animation-delay: 1s;">
                                 <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                                    <i class="fas fa-shield-halved text-gold-400"></i>
                                 </div>
                                 <div>
                                     <p class="text-white font-semibold text-base">Secure Platform</p>
@@ -123,7 +127,7 @@
 
                             <div class="flex items-start gap-3 float-text" style="animation-delay: 2s;">
                                 <div class="w-10 h-10 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center flex-shrink-0">
-                                    <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                    <i class="fas fa-truck-fast text-gold-400"></i>
                                 </div>
                                 <div>
                                     <p class="text-white font-semibold text-base">Fast & Reliable</p>
@@ -136,7 +140,7 @@
                     {{-- Footer --}}
                     <div class="mt-auto pt-8 slide-up-delay-3">
                         <div class="flex items-center gap-2 text-emerald-100/60 text-xs">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            <i class="fas fa-circle-check"></i>
                             <span>Trusted by organizations across Tanzania</span>
                         </div>
                     </div>
