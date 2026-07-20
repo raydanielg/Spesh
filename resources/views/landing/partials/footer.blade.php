@@ -33,14 +33,17 @@
 
             {{-- Quick Links --}}
             <div>
-                <h4 class="font-heading font-bold text-sm text-white mb-4 uppercase tracking-wide">Quick Links</h4>
-                <ul class="space-y-2">
-                    <li><a href="#home" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Home</a></li>
-                    <li><a href="#about" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">About Us</a></li>
-                    <li><a href="#services" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Services</a></li>
-                    <li><a href="#clients" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Clients</a></li>
-                    <li><a href="#certifications" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Certifications</a></li>
-                    <li><a href="#contact" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Contact</a></li>
+                <h4 class="font-heading font-bold text-sm text-white mb-5 uppercase tracking-wide flex items-center gap-2">
+                    Quick Links
+                    <span class="h-0.5 w-8 bg-gradient-to-r from-spesh-green to-spesh-green-light rounded-full"></span>
+                </h4>
+                <ul class="space-y-2.5">
+                    <li><a href="#home" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-green opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Home</a></li>
+                    <li><a href="#about" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-green opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>About Us</a></li>
+                    <li><a href="#services" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-green opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Services</a></li>
+                    <li><a href="#clients" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-green opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Clients</a></li>
+                    <li><a href="#certifications" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-green opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Certifications</a></li>
+                    <li><a href="#contact" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-green opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Contact</a></li>
                 </ul>
             </div>
 
