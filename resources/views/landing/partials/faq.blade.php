@@ -72,7 +72,7 @@
 <script>
 function toggleFaq(index) {
     const content = document.getElementById('faq-content-' + index);
-    const icon = document.querySelectorAll('.faq-icon')[index]?.querySelector('svg');
+    const icon = document.getElementById('faq-icon-' + index);
     const item = document.querySelectorAll('.faq-item')[index];
 
     const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
@@ -80,11 +80,11 @@ function toggleFaq(index) {
     if (isOpen) {
         content.style.maxHeight = '0px';
         if (icon) icon.style.transform = 'rotate(0deg)';
-        if (item) item.classList.remove('border-spesh-green/30', 'shadow-md');
+        if (item) item.classList.remove('border-spesh-green/30', 'shadow-lg');
     } else {
         content.style.maxHeight = content.scrollHeight + 'px';
         if (icon) icon.style.transform = 'rotate(180deg)';
-        if (item) item.classList.add('border-spesh-green/30', 'shadow-md');
+        if (item) item.classList.add('border-spesh-green/30', 'shadow-lg');
     }
 }
 </script>
