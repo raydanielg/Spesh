@@ -24,7 +24,7 @@
             {{-- Customs Clearing --}}
             <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1">
                 <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-green group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 15l2 2 4-4"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Customs Clearing</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">TRA-registered Clearing Agent since 2021. Handling sea & air shipments across all Tanzanian ports and borders.</p>
@@ -38,7 +38,7 @@
             {{-- Freight Forwarding --}}
             <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.1s;">
                 <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-ocean group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 16V8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2zM14 10h3l2 2v2M5 18a2 2 0 104 0M15 18a2 2 0 104 0"/></svg>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8h18M3 8v10a1 1 0 001 1h16a1 1 0 001-1V8M3 8l2-4h14l2 4M8 12v4M12 12v4M16 12v4"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Freight Forwarding</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Air freight, ocean freight, and inland transport (road & rail). Partnering with major shipping lines worldwide.</p>
@@ -52,7 +52,7 @@
             {{-- Project Logistics --}}
             <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.2s;">
                 <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-purple group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m-6 6h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21h18M5 21V7l8-4v18M19 21V11l-6-4M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Project Logistics</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Survey, planning, monitoring, insurance, and customs clearance for oil/gas/energy, dangerous goods, heavy lift, and more.</p>
@@ -66,7 +66,7 @@
             {{-- Warehousing --}}
             <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.3s;">
                 <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-steel group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7l9-4 9 4M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l9 4 9-4M9 21v-6h6v6"/></svg>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21V8l9-5 9 5v13M3 21h18M9 21v-6h6v6M9 11h.01M15 11h.01M9 14h.01M15 14h.01"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Warehousing</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Free and bonded warehousing facilities for secure storage of your goods while in transit or awaiting clearance.</p>
@@ -79,7 +79,7 @@
             {{-- Small Parcel / Loose Cargo --}}
             <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.4s;">
                 <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-green-light group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Small Parcel & Loose Cargo</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Import and export handling for small parcels and loose cargo from China, UAE, and UK.</p>
@@ -93,7 +93,7 @@
             {{-- Insurance & Bonds --}}
             <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.5s;">
                 <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-navy group-hover:scale-110 transition-transform duration-300">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4zM12 8v4M12 14h.01"/></svg>
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Insurance & Bonds</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Motor, Fire, Home, Marine, Engineering, GIT insurance. Customs Bonds (CB1–CB12), Performance & Bid/Tender Bonds.</p>
