@@ -6,4 +6,4 @@ Disallow: /register
 Disallow: /password/*
 Disallow: /api/*
 
-Sitemap: {{ config('app.url') }}/sitemap.xml
+Sitemap: https://www.spesh.co.tz/sitemap.xml

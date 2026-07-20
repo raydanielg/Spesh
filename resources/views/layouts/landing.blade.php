@@ -4,10 +4,62 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="description" content="Spesh Company Limited — A regional leader in logistics. Customs clearing, freight forwarding, project logistics, warehousing & more. Dar es Salaam, Tanzania.">
-    <meta name="keywords" content="Spesh, logistics, customs clearing, freight forwarding, Tanzania, Dar es Salaam, warehousing, project logistics">
 
-    <title>@yield('title', config('app.name', 'SPESH') . ' Company Limited')</title>
+    {{-- SEO Meta --}}
+    <title>@yield('title', 'SPESH Company Limited — Logistics & Customs Clearing in Tanzania')</title>
+    <meta name="description" content="@yield('meta-description', 'SPESH Company Limited is a regional leader in logistics based in Dar es Salaam, Tanzania. We offer customs clearing, freight forwarding, project logistics, warehousing, insurance & bonds, and small parcel handling. TRA-registered & TASAC-certified.')">
+    <meta name="keywords" content="@yield('meta-keywords', 'SPESH, logistics Tanzania, customs clearing Dar es Salaam, freight forwarding Tanzania, project logistics, warehousing Tanzania, TRA clearing agent, TASAC certified, cargo insurance, shipping Tanzania, ocean freight, air freight, inland transport')">
+    <meta name="author" content="SPESH Company Limited">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    <meta name="theme-color" content="#1A8251">
+    <link rel="canonical" href="{{ config('app.url') }}{{ request()->path() === '/' ? '' : '/' . request()->path() }}">
+
+    {{-- Favicon --}}
+    <link rel="icon" type="image/png" href="{{ asset('logo.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('logo.png') }}">
+    <link rel="shortcut icon" href="{{ asset('logo.png') }}">
+
+    {{-- Open Graph --}}
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SPESH Company Limited">
+    <meta property="og:title" content="@yield('og-title', 'SPESH Company Limited — Logistics & Customs Clearing in Tanzania')">
+    <meta property="og:description" content="@yield('og-description', 'Regional leader in logistics — customs clearing, freight forwarding, project logistics, warehousing & more. Dar es Salaam, Tanzania.')">
+    <meta property="og:url" content="{{ config('app.url') }}{{ request()->path() === '/' ? '' : '/' . request()->path() }}">
+    <meta property="og:image" content="{{ asset('logo.png') }}">
+    <meta property="og:image:alt" content="SPESH Company Limited Logo">
+    <meta property="og:locale" content="en_US">
+
+    {{-- Twitter Card --}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter-title', 'SPESH Company Limited — Logistics & Customs Clearing in Tanzania')">
+    <meta name="twitter:description" content="@yield('twitter-description', 'Regional leader in logistics — customs clearing, freight forwarding, project logistics, warehousing & more. Dar es Salaam, Tanzania.')">
+    <meta name="twitter:image" content="{{ asset('logo.png') }}">
+    <meta name="twitter:image:alt" content="SPESH Company Limited Logo">
+
+    {{-- Structured Data --}}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SPESH Company Limited",
+        "url": "{{ config('app.url') }}",
+        "logo": "{{ asset('logo.png') }}",
+        "description": "Regional leader in logistics — customs clearing, freight forwarding, project logistics, warehousing, insurance & bonds.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Samora House, 7th Floor",
+            "addressLocality": "Dar es Salaam",
+            "addressCountry": "TZ",
+            "postalCode": "60166 PSSSF"
+        },
+        "telephone": ["+255222111744", "+255699459191"],
+        "email": "info@spesh.co.tz",
+        "foundingDate": "2021",
+        "sameAs": []
+    }
+    </script>
 
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
