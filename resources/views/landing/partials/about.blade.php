@@ -72,7 +72,7 @@
                         </div>
                         <div class="flex-1 bg-white rounded-xl p-5 shadow-md border border-gray-100 group-hover:border-spesh-green/40 group-hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center gap-2 mb-2">
-                                <svg class="w-5 h-5 text-spesh-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                                <i class="fas fa-lightbulb text-base text-spesh-green"></i>
                                 <h4 class="font-heading font-bold text-lg text-spesh-navy">Innovation</h4>
                             </div>
                             <p class="font-body text-sm text-spesh-body leading-relaxed">Embracing technology and creative solutions to stay ahead in a dynamic logistics landscape.</p>
@@ -89,7 +89,7 @@
                         </div>
                         <div class="flex-1 bg-white rounded-xl p-5 shadow-md border border-gray-100 group-hover:border-spesh-purple/40 group-hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center gap-2 mb-2">
-                                <svg class="w-5 h-5 text-spesh-purple" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A48.108 48.108 0 0112 21c-2.272 0-4.459-.334-6.512-.929M21 13.255a48.096 48.096 0 00-3.51-7.48M21 13.255a9.027 9.027 0 01-9 9M3.514 8.775A48.099 48.099 0 0012 3c2.272 0 4.459.334 6.512.929M3.514 8.775a9.027 9.027 0 009 9m-9-9a48.11 48.11 0 016.512-.929"/></svg>
+                                <i class="fas fa-user-tie text-base text-spesh-purple"></i>
                                 <h4 class="font-heading font-bold text-lg text-spesh-navy">Professionalism</h4>
                             </div>
                             <p class="font-body text-sm text-spesh-body leading-relaxed">Maintaining the highest standards in every interaction, transaction, and delivery we make.</p>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="flex-1 bg-white rounded-xl p-5 shadow-md border border-gray-100 group-hover:border-spesh-ocean/40 group-hover:shadow-xl transition-all duration-300">
                             <div class="flex items-center gap-2 mb-2">
-                                <svg class="w-5 h-5 text-spesh-ocean" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                                <i class="fas fa-handshake text-base text-spesh-ocean"></i>
                                 <h4 class="font-heading font-bold text-lg text-spesh-navy">Transparency</h4>
                             </div>
                             <p class="font-body text-sm text-spesh-body leading-relaxed">Open, honest, and accountable in all our operations — building trust with every client.</p>
