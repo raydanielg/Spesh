@@ -64,8 +64,8 @@
                 <div class="absolute -top-4 -left-4 w-20 h-20 bg-spesh-purple/30 rounded-full -z-10"></div>
             </div>
 
-            {{-- Right: Features --}}
-            <div class="reveal space-y-5" style="transition-delay:0.2s;">
+            {{-- Right: Features as Stepper --}}
+            <div class="reveal" style="transition-delay:0.2s;">
                 @php
                     $features = [
                         ['title' => 'Expert Customs Clearing', 'desc' => 'TRA-licensed agents with deep knowledge of Tanzania customs regulations, ensuring smooth and compliant clearance every time.', 'icon' => 'fa-file-shield', 'color' => 'spesh-green'],
@@ -77,17 +77,19 @@
                     ];
                 @endphp
 
-                @foreach($features as $feature)
-                    <div class="group flex items-start gap-4 p-5 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 hover:border-spesh-{{ $feature['color'] }}/30 transition-all duration-300 hover:translate-x-1">
-                        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-spesh-{{ $feature['color'] }}/20 flex items-center justify-center group-hover:bg-spesh-{{ $feature['color'] }} transition-all duration-300 group-hover:scale-110">
-                            <i class="fas {{ $feature['icon'] }} text-lg text-spesh-{{ $feature['color'] }}-light group-hover:text-white transition-colors"></i>
-                        </div>
-                        <div class="min-w-0">
-                            <h3 class="font-heading font-bold text-base text-white mb-1">{{ $feature['title'] }}</h3>
-                            <p class="font-body text-sm text-white/50 leading-relaxed">{{ $feature['desc'] }}</p>
-                        </div>
-                    </div>
-                @endforeach
+                <ol class="relative text-white/60 border-s border-white/15">
+                    @foreach($features as $index => $feature)
+                        <li class="{{ $index < count($features) - 1 ? 'mb-8' : '' }} ms-7 group" style="transition-delay: {{ $index * 0.1 }}s;">
+                            <span class="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-spesh-navy bg-spesh-{{ $feature['color'] }}/20 text-spesh-{{ $feature['color'] }}-light group-hover:bg-spesh-{{ $feature['color'] }} group-hover:text-white transition-all duration-300 group-hover:scale-110 shadow-sm">
+                                <i class="fas {{ $feature['icon'] }} text-sm"></i>
+                            </span>
+                            <div class="bg-white/5 backdrop-blur-sm rounded-xl p-5 border border-white/10 group-hover:bg-white/10 group-hover:border-spesh-{{ $feature['color'] }}/30 group-hover:shadow-lg transition-all duration-300 group-hover:translate-x-1">
+                                <h3 class="font-heading font-bold text-base text-white mb-1 leading-tight">{{ $feature['title'] }}</h3>
+                                <p class="font-body text-sm text-white/50 leading-relaxed">{{ $feature['desc'] }}</p>
+                            </div>
+                        </li>
+                    @endforeach
+                </ol>
             </div>
         </div>
     </div>
