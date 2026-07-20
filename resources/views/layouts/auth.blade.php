@@ -24,7 +24,7 @@
         @keyframes floatText { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-10px); } }
         @keyframes slideUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
         @keyframes pulseGlow { 0%,100% { opacity:0.4; } 50% { opacity:0.7; } }
-        .ajax-loader { position:fixed; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg, #024938, #f9ac00, #024938); background-size: 200% 100%; animation: ajaxProgress 1s linear infinite; z-index:9999; display:none; }
+        .ajax-loader { position:fixed; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg, #1A8251, #216482, #1A8251); background-size: 200% 100%; animation: ajaxProgress 1s linear infinite; z-index:9999; display:none; }
         @keyframes ajaxProgress { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
         .page-transition { animation: simpleFadeIn 0.35s ease-out both; }
         .float-text { animation: floatText 4s ease-in-out infinite; }
@@ -39,8 +39,9 @@
             theme: {
                 extend: {
                     colors: {
-                        emerald: { 50:'#e6f5f1',100:'#b3e0d4',200:'#80cbc0',300:'#4db5a8',400:'#1a9f8e',500:'#024938',600:'#023d30',700:'#013028',800:'#01241f',900:'#001816' },
-                        gold: { 50:'#fff5e0',100:'#ffe6b3',200:'#ffd680',300:'#ffc64d',400:'#ffb71a',500:'#f9ac00',600:'#d49700',700:'#b07c00',800:'#8c6100',900:'#684600' }
+                        emerald: { 50:'#E8F5EE',100:'#C8E6D5',200:'#A8D7BC',300:'#88C8A3',400:'#68B98A',500:'#1A8251',600:'#177448',700:'#14663E',800:'#115835',900:'#0E4A2B' },
+                        gold: { 50:'#E8F0F5',100:'#C8DCE8',200:'#A8C8DB',300:'#88B4CE',400:'#558DA1',500:'#216482',600:'#1D5A75',700:'#195068',800:'#15465B',900:'#113C4E' },
+                        navy: { 50:'#F0EDF2',100:'#E0DAE5',200:'#D0C8D8',300:'#B0A6C0',400:'#807498',500:'#504070',600:'#3D334F',700:'#302740',800:'#221A2E',900:'#150F1A' }
                     }
                 }
             }
@@ -51,7 +52,7 @@
 
     {{-- Auth Background --}}
     <div class="fixed inset-0 z-0">
-        <div class="absolute inset-0 bg-gradient-to-br from-emerald-900 via-emerald-800 to-emerald-700"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-700 to-navy-600"></div>
         <div class="absolute top-0 left-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl"></div>
     </div>
@@ -63,7 +64,7 @@
         <div class="w-full max-w-5xl grid lg:grid-cols-2 gap-0 lg:gap-8 items-center">
 
             {{-- Left Column: Branding + Features (hidden on mobile) --}}
-            <div class="hidden lg:flex flex-col justify-center relative overflow-hidden rounded-3xl h-[600px] shadow-2xl bg-gradient-to-br from-emerald-900 to-emerald-800">
+            <div class="hidden lg:flex flex-col justify-center relative overflow-hidden rounded-3xl h-[600px] shadow-2xl bg-gradient-to-br from-navy-800 to-navy-700">
                 {{-- Decorative dots --}}
                 <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 24px 24px;"></div>
                 <div class="absolute top-0 right-0 w-72 h-72 bg-gold-500/15 rounded-full blur-3xl pulse-glow"></div>
@@ -74,7 +75,7 @@
                     {{-- Logo --}}
                     <div class="flex items-center gap-3 mb-8 slide-up">
                         <div class="w-12 h-12 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center">
-                            <svg class="w-7 h-7 text-gold-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                            <svg class="w-7 h-7 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
                         </div>
                         <div>
                             <h1 class="text-2xl font-extrabold text-white tracking-tight">{{ config('app.name', 'SPESH') }}</h1>
@@ -195,7 +196,7 @@
         };
 
         const styles = {
-            success: { bg: 'linear-gradient(135deg, #024938, #013028)', accent: '#f9ac00' },
+            success: { bg: 'linear-gradient(135deg, #1A8251, #14663E)', accent: '#7AABA7' },
             error:   { bg: 'linear-gradient(135deg, #dc2626, #991b1b)', accent: '#fca5a5' },
             warning: { bg: 'linear-gradient(135deg, #d97706, #92400e)', accent: '#fde68a' },
             info:    { bg: 'linear-gradient(135deg, #2563eb, #1e3a8a)', accent: '#93c5fd' }
