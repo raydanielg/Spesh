@@ -75,9 +75,17 @@
 
             {{-- Left Column: Branding + Features (hidden on mobile) --}}
             <div class="hidden lg:flex flex-col justify-center relative overflow-hidden rounded-3xl h-[600px] shadow-2xl bg-gradient-to-br from-navy-800 to-navy-700">
-                {{-- Background image --}}
-                <div class="absolute inset-0 bg-cover bg-center opacity-20" style="background-image: url('{{ asset('1380.jpg') }}');"></div>
-                <div class="absolute inset-0 bg-gradient-to-br from-navy-800/90 via-navy-700/85 to-navy-600/80"></div>
+                {{-- Background image carousel --}}
+                @php
+                    $authImages = ['1380.jpg', '1374 (1).jpg', '735 (1).jpg', '24177.jpg'];
+                @endphp
+                @foreach($authImages as $i => $img)
+                    <div class="auth-bg absolute inset-0 bg-cover bg-center transition-opacity duration-[2000ms] {{ $i === 0 ? 'opacity-100' : 'opacity-0' }}" style="background-image: url('{{ asset($img) }}');" data-index="{{ $i }}"></div>
+                @endforeach
+
+                {{-- Gradient overlay for readability --}}
+                <div class="absolute inset-0 bg-gradient-to-br from-navy-800/80 via-navy-700/70 to-navy-600/60"></div>
+                <div class="absolute inset-0 bg-gradient-to-t from-navy-800/90 via-transparent to-navy-800/40"></div>
 
                 {{-- Decorative dots --}}
                 <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 24px 24px;"></div>
