@@ -65,48 +65,9 @@
 
     {{-- Auth Background --}}
     <div class="fixed inset-0 z-0 overflow-hidden">
-        {{-- Background image --}}
-        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('flat-abstract-background-pattern-vector_822782-866.jpg') }}');"></div>
-        {{-- Dark overlay --}}
-        <div class="absolute inset-0 bg-gradient-to-br from-navy-800/90 via-navy-700/85 to-navy-600/80"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-700 to-navy-600"></div>
         <div class="absolute top-0 left-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl"></div>
-
-        {{-- Animated grid lines --}}
-        <div class="absolute inset-0 opacity-[0.04]">
-            <div class="auth-grid-line absolute top-0 bottom-0 w-px bg-white" style="left:10%; animation: gridPulse 4s ease-in-out infinite 0s;"></div>
-            <div class="auth-grid-line absolute top-0 bottom-0 w-px bg-white" style="left:25%; animation: gridPulse 4s ease-in-out infinite 0.5s;"></div>
-            <div class="auth-grid-line absolute top-0 bottom-0 w-px bg-white" style="left:40%; animation: gridPulse 4s ease-in-out infinite 1s;"></div>
-            <div class="auth-grid-line absolute top-0 bottom-0 w-px bg-white" style="left:55%; animation: gridPulse 4s ease-in-out infinite 1.5s;"></div>
-            <div class="auth-grid-line absolute top-0 bottom-0 w-px bg-white" style="left:70%; animation: gridPulse 4s ease-in-out infinite 2s;"></div>
-            <div class="auth-grid-line absolute top-0 bottom-0 w-px bg-white" style="left:85%; animation: gridPulse 4s ease-in-out infinite 2.5s;"></div>
-            <div class="auth-grid-line absolute left-0 right-0 h-px bg-white" style="top:15%; animation: gridPulse 4s ease-in-out infinite 0.3s;"></div>
-            <div class="auth-grid-line absolute left-0 right-0 h-px bg-white" style="top:30%; animation: gridPulse 4s ease-in-out infinite 0.8s;"></div>
-            <div class="auth-grid-line absolute left-0 right-0 h-px bg-white" style="top:50%; animation: gridPulse 4s ease-in-out infinite 1.3s;"></div>
-            <div class="auth-grid-line absolute left-0 right-0 h-px bg-white" style="top:70%; animation: gridPulse 4s ease-in-out infinite 1.8s;"></div>
-            <div class="auth-grid-line absolute left-0 right-0 h-px bg-white" style="top:85%; animation: gridPulse 4s ease-in-out infinite 2.3s;"></div>
-        </div>
-
-        {{-- Animated dots --}}
-        <div class="absolute inset-0">
-            <div class="auth-dot absolute w-1.5 h-1.5 rounded-full bg-emerald-400/40" style="top:12%; left:8%; animation: dotFloat 6s ease-in-out infinite 0s;"></div>
-            <div class="auth-dot absolute w-1 h-1 rounded-full bg-gold-400/40" style="top:22%; left:92%; animation: dotFloat 7s ease-in-out infinite 1s;"></div>
-            <div class="auth-dot absolute w-2 h-2 rounded-full bg-emerald-400/30" style="top:45%; left:15%; animation: dotFloat 8s ease-in-out infinite 0.5s;"></div>
-            <div class="auth-dot absolute w-1 h-1 rounded-full bg-gold-400/50" style="top:65%; left:88%; animation: dotFloat 6s ease-in-out infinite 1.5s;"></div>
-            <div class="auth-dot absolute w-1.5 h-1.5 rounded-full bg-emerald-400/40" style="top:80%; left:20%; animation: dotFloat 7s ease-in-out infinite 2s;"></div>
-            <div class="auth-dot absolute w-1 h-1 rounded-full bg-gold-400/40" style="top:35%; left:75%; animation: dotFloat 8s ease-in-out infinite 0.8s;"></div>
-            <div class="auth-dot absolute w-2 h-2 rounded-full bg-emerald-400/30" style="top:55%; left:50%; animation: dotFloat 6s ease-in-out infinite 1.2s;"></div>
-            <div class="auth-dot absolute w-1 h-1 rounded-full bg-gold-400/50" style="top:90%; left:60%; animation: dotFloat 7s ease-in-out infinite 2.5s;"></div>
-            <div class="auth-dot absolute w-1.5 h-1.5 rounded-full bg-emerald-400/35" style="top:8%; left:45%; animation: dotFloat 8s ease-in-out infinite 0.3s;"></div>
-            <div class="auth-dot absolute w-1 h-1 rounded-full bg-gold-400/40" style="top:75%; left:35%; animation: dotFloat 6s ease-in-out infinite 1.8s;"></div>
-        </div>
-
-        {{-- Animated diagonal lines --}}
-        <div class="absolute inset-0 opacity-[0.06]">
-            <div class="auth-diagonal absolute h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent" style="top:20%; left:-10%; width:120%; transform:rotate(-15deg); animation: lineSlide 8s ease-in-out infinite 0s;"></div>
-            <div class="auth-diagonal absolute h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent" style="top:50%; left:-10%; width:120%; transform:rotate(-12deg); animation: lineSlide 8s ease-in-out infinite 2s;"></div>
-            <div class="auth-diagonal absolute h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent" style="top:75%; left:-10%; width:120%; transform:rotate(-18deg); animation: lineSlide 8s ease-in-out infinite 4s;"></div>
-        </div>
     </div>
 
     {{-- AJAX Progress Bar --}}
