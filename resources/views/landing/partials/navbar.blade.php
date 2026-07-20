@@ -13,7 +13,8 @@
                 <a href="#about" class="nav-link font-heading font-medium text-sm text-spesh-body hover:text-spesh-green transition-colors">About</a>
                 <a href="#services" class="nav-link font-heading font-medium text-sm text-spesh-body hover:text-spesh-green transition-colors">Services</a>
                 <a href="#clients" class="nav-link font-heading font-medium text-sm text-spesh-body hover:text-spesh-green transition-colors">Clients</a>
-                <a href="#certifications" class="nav-link font-heading font-medium text-sm text-spesh-body hover:text-spesh-green transition-colors">Certifications</a>
+                <a href="#why-choose-us" class="nav-link font-heading font-medium text-sm text-spesh-body hover:text-spesh-green transition-colors">Why Choose Us</a>
+                <a href="#faq" class="nav-link font-heading font-medium text-sm text-spesh-body hover:text-spesh-green transition-colors">FAQ</a>
                 <a href="#contact" class="nav-link font-heading font-medium text-sm text-spesh-body hover:text-spesh-green transition-colors">Contact</a>
             </div>
 
@@ -21,7 +22,10 @@
             <div class="hidden lg:flex items-center gap-3">
                 @guest
                     <a href="{{ route('login') }}" class="font-heading font-semibold text-sm text-spesh-navy hover:text-spesh-green transition-colors px-4 py-2">Login</a>
-                    <a href="{{ route('register') }}" class="font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all">Get Started</a>
+                    <a href="{{ route('quote') }}" class="inline-flex items-center gap-2 font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all hover:scale-[1.02]">
+                        <i class="fas fa-file-invoice-dollar text-xs"></i>
+                        <span>Get Quote</span>
+                    </a>
                 @else
                     <a href="{{ route('home') }}" class="font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all">Dashboard</a>
                 @endguest
@@ -43,12 +47,13 @@
             <a href="#about" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">About</a>
             <a href="#services" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">Services</a>
             <a href="#clients" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">Clients</a>
-            <a href="#certifications" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">Certifications</a>
+            <a href="#why-choose-us" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">Why Choose Us</a>
+            <a href="#faq" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">FAQ</a>
             <a href="#contact" class="mobile-link block px-4 py-3 rounded-lg font-heading font-medium text-sm text-spesh-body hover:bg-spesh-gray/30 hover:text-spesh-green transition-colors">Contact</a>
             <div class="pt-3 border-t border-gray-100 flex gap-3">
                 @guest
                     <a href="{{ route('login') }}" class="flex-1 text-center px-4 py-2.5 rounded-lg font-heading font-semibold text-sm text-spesh-navy border border-spesh-gray">Login</a>
-                    <a href="{{ route('register') }}" class="flex-1 text-center px-4 py-2.5 rounded-lg font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark">Get Started</a>
+                    <a href="{{ route('quote') }}" class="flex-1 text-center px-4 py-2.5 rounded-lg font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark">Get Quote</a>
                 @else
                     <a href="{{ route('home') }}" class="flex-1 text-center px-4 py-2.5 rounded-lg font-heading font-semibold text-sm text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark">Dashboard</a>
                 @endguest
