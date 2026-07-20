@@ -81,10 +81,10 @@
 
         .porthole { border-radius: 50%; overflow: hidden; border: 4px solid #fff; box-shadow: 0 0 0 6px rgba(26,130,81,0.15), 0 20px 60px -10px rgba(0,0,0,0.3); }
 
-        .section-watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Poppins', sans-serif; font-weight: 900; font-size: clamp(4rem, 12vw, 10rem); color: rgba(26,130,81,0.03); white-space: nowrap; pointer-events: none; z-index: 0; }
+        .section-watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-family: 'Nunito', sans-serif; font-weight: 900; font-size: clamp(4rem, 12vw, 10rem); color: rgba(26,130,81,0.03); white-space: nowrap; pointer-events: none; z-index: 0; }
 
         html { scroll-behavior: smooth; }
-        body { font-family: 'Open Sans', sans-serif; color: #3A3A3A; }
+        body { font-family: 'Nunito', sans-serif; color: #3A3A3A; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #302740; }
@@ -92,7 +92,7 @@
         ::-webkit-scrollbar-thumb:hover { background: #2BA066; }
     </style>
 </head>
-<body class="bg-white overflow-x-hidden">
+<body class="bg-white overflow-x-hidden antialiased">
 
     @yield('content')
 
