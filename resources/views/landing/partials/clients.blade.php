@@ -56,28 +56,6 @@
             @endforeach
         </div>
     </div>
-
-    {{-- Stats bar --}}
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="text-center reveal">
-                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green">8+</p>
-                <p class="font-body text-xs text-spesh-body/60 mt-1 uppercase tracking-wide">Major Clients</p>
-            </div>
-            <div class="text-center reveal" style="transition-delay:0.1s;">
-                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green">100%</p>
-                <p class="font-body text-xs text-spesh-body/60 mt-1 uppercase tracking-wide">Client Retention</p>
-            </div>
-            <div class="text-center reveal" style="transition-delay:0.2s;">
-                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green">5+</p>
-                <p class="font-body text-xs text-spesh-body/60 mt-1 uppercase tracking-wide">Sectors Served</p>
-            </div>
-            <div class="text-center reveal" style="transition-delay:0.3s;">
-                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green">2021</p>
-                <p class="font-body text-xs text-spesh-body/60 mt-1 uppercase tracking-wide">Since</p>
-            </div>
-        </div>
-    </div>
 </section>
 
 <style>
