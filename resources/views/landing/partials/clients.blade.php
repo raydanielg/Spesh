@@ -18,30 +18,77 @@
                 We are proud to serve a diverse portfolio of clients across various sectors in Tanzania.
             </p>
         </div>
+    </div>
 
-        {{-- Clients grid --}}
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 lg:gap-6">
+    {{-- Auto-scrolling marquee --}}
+    <div class="relative z-10 overflow-hidden">
+        {{-- Edge fades --}}
+        <div class="absolute left-0 top-0 bottom-0 w-20 lg:w-32 bg-gradient-to-r from-spesh-navy to-transparent z-20 pointer-events-none"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-20 lg:w-32 bg-gradient-to-l from-spesh-navy to-transparent z-20 pointer-events-none"></div>
+
+        {{-- Track --}}
+        <div class="clients-marquee flex items-center gap-8 lg:gap-12 w-max">
             @php
                 $clients = [
-                    'Kilimanjaro Biochem Ltd',
-                    'Tanzania Cigarette Company (TCC)',
-                    'RML Automotive Solutions',
-                    'RSA 4x4 Products',
-                    'Asyx Group',
-                    'Medical Stores Department (MSD)',
-                    'Mcharo Kombe',
-                    'Dedun Resources',
+                    ['name' => 'Asyx Group', 'logo' => 'clients/Asyx Group.png'],
+                    ['name' => 'Dedun Resources', 'logo' => 'clients/Dedun Resources.jpg'],
+                    ['name' => 'Kilimanjaro Biochem Ltd', 'logo' => 'clients/Kilimanjaro Biochem Ltd.png'],
+                    ['name' => 'Mcharo Kombe', 'logo' => 'clients/Mcharo Kombe.png'],
+                    ['name' => 'Medical Stores Department', 'logo' => 'clients/Medical Stores Department (MSD).svg'],
+                    ['name' => 'RML Automotive Solutions', 'logo' => 'clients/RMLAutomotiveSolutions.png'],
+                    ['name' => 'RSA 4x4 Products', 'logo' => 'clients/RSA 4x4 Products.png'],
+                    ['name' => 'Tanzania Cigarette Company', 'logo' => 'clients/tcc.png'],
                 ];
             @endphp
 
+            {{-- First set --}}
             @foreach($clients as $client)
-                <div class="reveal group bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl p-6 text-center hover:bg-white/10 hover:border-spesh-green/30 transition-all">
-                    <div class="w-12 h-12 mx-auto mb-3 rounded-xl bg-gradient-to-br from-spesh-green/20 to-spesh-purple/20 flex items-center justify-center group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6 text-spesh-green-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
-                    </div>
-                    <p class="font-heading font-semibold text-sm text-white/90 leading-snug">{{ $client }}</p>
+                <div class="client-card flex-shrink-0 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl px-8 py-6 flex items-center justify-center hover:bg-white/10 hover:border-spesh-green/30 transition-all duration-300 hover:scale-105">
+                    <img src="{{ asset($client['logo']) }}" alt="{{ $client['name'] }}" class="h-16 lg:h-20 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300" loading="lazy">
+                </div>
+            @endforeach
+
+            {{-- Duplicate set for seamless loop --}}
+            @foreach($clients as $client)
+                <div class="client-card flex-shrink-0 group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl px-8 py-6 flex items-center justify-center hover:bg-white/10 hover:border-spesh-green/30 transition-all duration-300 hover:scale-105" aria-hidden="true">
+                    <img src="{{ asset($client['logo']) }}" alt="{{ $client['name'] }}" class="h-16 lg:h-20 w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300" loading="lazy">
                 </div>
             @endforeach
         </div>
     </div>
+
+    {{-- Stats bar --}}
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-14">
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="text-center reveal">
+                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green-light">8+</p>
+                <p class="font-body text-xs text-white/50 mt-1 uppercase tracking-wide">Major Clients</p>
+            </div>
+            <div class="text-center reveal" style="transition-delay:0.1s;">
+                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green-light">100%</p>
+                <p class="font-body text-xs text-white/50 mt-1 uppercase tracking-wide">Client Retention</p>
+            </div>
+            <div class="text-center reveal" style="transition-delay:0.2s;">
+                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green-light">5+</p>
+                <p class="font-body text-xs text-white/50 mt-1 uppercase tracking-wide">Sectors Served</p>
+            </div>
+            <div class="text-center reveal" style="transition-delay:0.3s;">
+                <p class="font-heading font-extrabold text-3xl lg:text-4xl text-spesh-green-light">2021</p>
+                <p class="font-body text-xs text-white/50 mt-1 uppercase tracking-wide">Since</p>
+            </div>
+        </div>
+    </div>
 </section>
+
+<style>
+    .clients-marquee {
+        animation: clientsScroll 30s linear infinite;
+    }
+    .clients-marquee:hover {
+        animation-play-state: paused;
+    }
+    @keyframes clientsScroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+    }
+</style>
