@@ -233,7 +233,7 @@
                 duration: 5000,
                 close: true,
                 gravity: 'top',
-                position: 'right',
+                position: 'center',
                 stopOnFocus: true,
                 style: {
                     background: s.bg,
