@@ -44,7 +44,7 @@
                             <div class="space-y-3 mt-8">
                                 <div class="flex items-center gap-3">
                                     <div class="w-9 h-9 rounded-lg bg-spesh-green/20 flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-5 h-5 text-spesh-green-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                        <i class="fas fa-file-shield text-spesh-green-light"></i>
                                     </div>
                                     <div>
                                         <p class="font-heading font-semibold text-sm text-white">TRA Registered Agent</p>
@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <div class="w-9 h-9 rounded-lg bg-spesh-ocean/20 flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-5 h-5 text-spesh-ocean-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                                        <i class="fas fa-bolt text-spesh-ocean-light"></i>
                                     </div>
                                     <div>
                                         <p class="font-heading font-semibold text-sm text-white">Fast Response</p>
@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="flex items-center gap-3">
                                     <div class="w-9 h-9 rounded-lg bg-spesh-purple/30 flex items-center justify-center flex-shrink-0">
-                                        <svg class="w-5 h-5 text-spesh-purple-light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4z"/></svg>
+                                        <i class="fas fa-shield-halved text-spesh-purple-light"></i>
                                     </div>
                                     <div>
                                         <p class="font-heading font-semibold text-sm text-white">Fully Insured</p>
