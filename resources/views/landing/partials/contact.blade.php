@@ -74,25 +74,67 @@
             <div class="reveal bg-white rounded-2xl p-8 shadow-2xl" style="transition-delay:0.2s;">
                 <h3 class="font-heading font-bold text-xl text-spesh-navy mb-6">Send Us a Message</h3>
                 <form id="contactForm" class="space-y-5">
+                    @csrf
+                    {{-- Full Name --}}
                     <div>
-                        <label class="block font-heading font-semibold text-xs text-spesh-body mb-1.5 uppercase tracking-wide">Full Name</label>
-                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm font-body" placeholder="John Doe">
+                        <label for="contact-name" class="block text-sm font-semibold text-gray-700 mb-1.5">Full Name</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+                            </div>
+                            <input id="contact-name" type="text" name="name" required
+                                class="contact-input w-full pl-11 pr-4 py-2.5 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm"
+                                placeholder="John Doe">
+                        </div>
+                        <p class="contact-error mt-1.5 text-sm text-red-600 hidden"></p>
                     </div>
+
+                    {{-- Email --}}
                     <div>
-                        <label class="block font-heading font-semibold text-xs text-spesh-body mb-1.5 uppercase tracking-wide">Email Address</label>
-                        <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm font-body" placeholder="john@example.com">
+                        <label for="contact-email" class="block text-sm font-semibold text-gray-700 mb-1.5">Email Address</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                            </div>
+                            <input id="contact-email" type="email" name="email" required
+                                class="contact-input w-full pl-11 pr-4 py-2.5 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm"
+                                placeholder="john@example.com">
+                        </div>
+                        <p class="contact-error mt-1.5 text-sm text-red-600 hidden"></p>
                     </div>
+
+                    {{-- Phone --}}
                     <div>
-                        <label class="block font-heading font-semibold text-xs text-spesh-body mb-1.5 uppercase tracking-wide">Phone (Optional)</label>
-                        <input type="tel" name="phone" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm font-body" placeholder="+255 XXX XXX XXX">
+                        <label for="contact-phone" class="block text-sm font-semibold text-gray-700 mb-1.5">Phone <span class="text-gray-400 font-normal">(Optional)</span></label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                            </div>
+                            <input id="contact-phone" type="tel" name="phone"
+                                class="contact-input w-full pl-11 pr-4 py-2.5 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm"
+                                placeholder="+255 XXX XXX XXX">
+                        </div>
+                        <p class="contact-error mt-1.5 text-sm text-red-600 hidden"></p>
                     </div>
+
+                    {{-- Message --}}
                     <div>
-                        <label class="block font-heading font-semibold text-xs text-spesh-body mb-1.5 uppercase tracking-wide">Message</label>
-                        <textarea name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm font-body resize-none" placeholder="How can we help you?"></textarea>
+                        <label for="contact-message" class="block text-sm font-semibold text-gray-700 mb-1.5">Message</label>
+                        <div class="relative">
+                            <div class="absolute top-3.5 left-0 pl-3.5 flex items-start pointer-events-none">
+                                <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 3v-3z"/></svg>
+                            </div>
+                            <textarea id="contact-message" name="message" rows="4" required
+                                class="contact-input w-full pl-11 pr-4 py-2.5 rounded-lg border border-gray-200 focus:border-spesh-green focus:ring-2 focus:ring-spesh-green/20 outline-none transition-all text-sm resize-none"
+                                placeholder="How can we help you?"></textarea>
+                        </div>
+                        <p class="contact-error mt-1.5 text-sm text-red-600 hidden"></p>
                     </div>
-                    <button type="submit" class="w-full py-3.5 rounded-lg font-heading font-bold text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+
+                    {{-- Submit --}}
+                    <button type="submit" id="contactSubmit" class="w-full py-3 text-sm font-bold text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>
-                        Send Message
+                        <span>Send Message</span>
                     </button>
                 </form>
             </div>
