@@ -113,7 +113,7 @@
                     <h3 class="font-heading font-bold text-2xl text-white mb-2">General Trading</h3>
                     <p class="font-body text-sm text-white/70 max-w-xl">Import, export & supply of ICT, electrical, mechanical, electro-mechanical & telecom equipment.</p>
                 </div>
-                <a href="#contact" class="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold text-spesh-navy bg-white hover:bg-spesh-gray shadow-lg transition-all hover:scale-[1.02]">
+                <a href="{{ route('quote') }}" class="flex-shrink-0 inline-flex items-center gap-2 px-6 py-3 rounded-xl font-heading font-semibold text-spesh-navy bg-white hover:bg-spesh-gray shadow-lg transition-all hover:scale-[1.02]">
                     Get a Quote
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
                 </a>

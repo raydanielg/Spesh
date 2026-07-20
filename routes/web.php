@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('landing.index');
 })->name('landing');
 
+Route::get('/quote', function () {
+    return view('landing.quote');
+})->name('quote');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
