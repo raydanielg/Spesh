@@ -1,18 +1,37 @@
 {{-- Hero Section --}}
-<section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-spesh-navy via-spesh-purple to-spesh-navy-dark gradient-animate">
-    {{-- Decorative arch --}}
-    <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-spesh-green via-spesh-green-light to-spesh-green"></div>
-    <div class="absolute top-2 left-0 right-0 h-1 bg-gradient-to-r from-spesh-purple via-spesh-purple-light to-spesh-purple"></div>
+<section id="home" class="relative min-h-screen flex items-center overflow-hidden bg-spesh-navy-dark">
 
-    {{-- Floating shapes --}}
-    <div class="absolute top-20 right-10 w-72 h-72 bg-spesh-green/10 rounded-full blur-3xl float-y"></div>
-    <div class="absolute bottom-20 left-10 w-96 h-96 bg-spesh-purple/15 rounded-full blur-3xl float-y" style="animation-delay:2s;"></div>
-    <div class="absolute top-1/3 left-1/4 w-40 h-40 bg-spesh-ocean/10 rounded-full blur-2xl float-y" style="animation-delay:4s;"></div>
+    {{-- Background image slideshow --}}
+    <div class="absolute inset-0 z-0">
+        @php
+            $heroImages = ['735 (1).jpg', '1200 (1).jpg', '1374 (1).jpg', '1380.jpg', '24177.jpg'];
+        @endphp
+        @foreach($heroImages as $i => $img)
+            <div class="hero-bg absolute inset-0 bg-cover bg-center transition-opacity duration-[2000ms] {{ $i === 0 ? 'opacity-100' : 'opacity-0' }}"
+                 style="background-image: url('{{ asset($img) }}');"
+                 data-index="{{ $i }}"></div>
+        @endforeach
+
+        {{-- Dark overlay for text readability --}}
+        <div class="absolute inset-0 bg-gradient-to-br from-spesh-navy-dark/90 via-spesh-navy/80 to-spesh-purple/85"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-spesh-navy-dark/70 via-transparent to-spesh-navy-dark/50"></div>
+    </div>
+
+    {{-- Decorative arch --}}
+    <div class="absolute top-0 left-0 right-0 h-2 bg-gradient-to-r from-spesh-green via-spesh-green-light to-spesh-green z-20"></div>
+    <div class="absolute top-2 left-0 right-0 h-1 bg-gradient-to-r from-spesh-purple via-spesh-purple-light to-spesh-purple z-20"></div>
 
     {{-- Dot pattern --}}
-    <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1px); background-size: 28px 28px;"></div>
+    <div class="absolute inset-0 opacity-5 z-10" style="background-image: radial-gradient(rgba(255,255,255,0.3) 1px, transparent 1px); background-size: 28px 28px;"></div>
 
-    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-0 lg:pb-0 w-full">
+    {{-- Slide indicators --}}
+    <div class="absolute bottom-24 left-1/2 -translate-x-1/2 z-30 hidden lg:flex items-center gap-2">
+        @foreach($heroImages as $i => $img)
+            <button class="hero-dot w-2 h-2 rounded-full transition-all duration-300 {{ $i === 0 ? 'bg-spesh-green w-8' : 'bg-white/30 hover:bg-white/50' }}" data-index="{{ $i }}"></button>
+        @endforeach
+    </div>
+
+    <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16 lg:pt-0 lg:pb-0 w-full">
         <div class="grid lg:grid-cols-2 gap-12 items-center">
 
             {{-- Left: Text --}}
@@ -22,13 +41,13 @@
                     <span class="font-heading text-xs font-medium text-white/90 tracking-wide">Regional Leader in Logistics</span>
                 </div>
 
-                <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">
+                <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6 drop-shadow-lg">
                     Delivering
                     <span class="bg-gradient-to-r from-spesh-green-light to-spesh-green bg-clip-text text-transparent">Excellence</span>
                     Across Borders
                 </h1>
 
-                <p class="font-body text-base sm:text-lg text-white/70 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                <p class="font-body text-base sm:text-lg text-white/80 mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed drop-shadow">
                     Spesh Company Limited — your trusted partner in customs clearing, freight forwarding, and project logistics. Getting products to market quickly, efficiently, and safely since 2021.
                 </p>
 
@@ -46,16 +65,16 @@
                 {{-- Stats --}}
                 <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/10">
                     <div>
-                        <p class="font-heading font-extrabold text-3xl text-spesh-green-light">2021</p>
-                        <p class="font-body text-xs text-white/60 mt-1">Established</p>
+                        <p class="font-heading font-extrabold text-3xl text-spesh-green-light drop-shadow">2021</p>
+                        <p class="font-body text-xs text-white/70 mt-1">Established</p>
                     </div>
                     <div>
-                        <p class="font-heading font-extrabold text-3xl text-spesh-green-light">7+</p>
-                        <p class="font-body text-xs text-white/60 mt-1">Core Services</p>
+                        <p class="font-heading font-extrabold text-3xl text-spesh-green-light drop-shadow">7+</p>
+                        <p class="font-body text-xs text-white/70 mt-1">Core Services</p>
                     </div>
                     <div>
-                        <p class="font-heading font-extrabold text-3xl text-spesh-green-light">8+</p>
-                        <p class="font-body text-xs text-white/60 mt-1">Major Clients</p>
+                        <p class="font-heading font-extrabold text-3xl text-spesh-green-light drop-shadow">8+</p>
+                        <p class="font-body text-xs text-white/70 mt-1">Major Clients</p>
                     </div>
                 </div>
             </div>
@@ -67,16 +86,14 @@
                     <div class="absolute inset-0 rounded-full border-2 border-spesh-green/20" style="animation: pulseRing 3s ease-out infinite;"></div>
                     <div class="absolute inset-0 rounded-full border-2 border-spesh-green/20" style="animation: pulseRing 3s ease-out infinite 1s;"></div>
 
-                    {{-- Porthole --}}
-                    <div class="porthole w-80 h-80 lg:w-96 lg:h-96 relative">
-                        <div class="absolute inset-0 bg-gradient-to-br from-spesh-ocean/30 to-spesh-navy/30 rounded-full"></div>
-                        <div class="absolute inset-0 flex items-center justify-center">
-                            <svg class="w-40 h-40 text-white/80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                                <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" stroke-linecap="round" stroke-linejoin="round"/>
-                                <path d="M7 19a3 3 0 01-3-3m14-3a3 3 0 013 3" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
-                                <path d="M12 7v8m-4-4l4 4 4-4" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
+                    {{-- Porthole with rotating images --}}
+                    <div class="porthole w-80 h-80 lg:w-96 lg:h-96 relative overflow-hidden">
+                        @foreach($heroImages as $i => $img)
+                            <div class="porthole-img absolute inset-0 transition-opacity duration-[2000ms] {{ $i === 0 ? 'opacity-100' : 'opacity-0' }}"
+                                 style="background-image: url('{{ asset($img) }}'); background-size: cover; background-position: center;"
+                                 data-index="{{ $i }}"></div>
+                        @endforeach
+                        <div class="absolute inset-0 rounded-full" style="box-shadow: inset 0 0 40px rgba(48,39,64,0.4);"></div>
                     </div>
 
                     {{-- Floating badges --}}
@@ -109,7 +126,7 @@
     </div>
 
     {{-- Scroll indicator --}}
-    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:block">
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 hidden lg:block z-30">
         <div class="flex flex-col items-center gap-2">
             <span class="font-body text-xs text-white/40 tracking-widest uppercase">Scroll</span>
             <div class="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2">
@@ -119,5 +136,60 @@
     </div>
 
     {{-- Bottom gradient transition --}}
-    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-white z-20"></div>
 </section>
+
+{{-- Slideshow script --}}
+<script>
+(function() {
+    const bgSlides = document.querySelectorAll('.hero-bg');
+    const portholeSlides = document.querySelectorAll('.porthole-img');
+    const dots = document.querySelectorAll('.hero-dot');
+    const totalSlides = bgSlides.length;
+    let currentIndex = 0;
+    let slideshowInterval;
+
+    function showSlide(index) {
+        bgSlides.forEach(function(slide, i) {
+            slide.classList.toggle('opacity-100', i === index);
+            slide.classList.toggle('opacity-0', i !== index);
+        });
+        portholeSlides.forEach(function(slide, i) {
+            slide.classList.toggle('opacity-100', i === index);
+            slide.classList.toggle('opacity-0', i !== index);
+        });
+        dots.forEach(function(dot, i) {
+            if (i === index) {
+                dot.classList.add('bg-spesh-green', 'w-8');
+                dot.classList.remove('bg-white/30', 'w-2');
+            } else {
+                dot.classList.remove('bg-spesh-green', 'w-8');
+                dot.classList.add('bg-white/30', 'w-2');
+            }
+        });
+        currentIndex = index;
+    }
+
+    function nextSlide() {
+        showSlide((currentIndex + 1) % totalSlides);
+    }
+
+    function startSlideshow() {
+        slideshowInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopSlideshow() {
+        clearInterval(slideshowInterval);
+    }
+
+    dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+            stopSlideshow();
+            showSlide(parseInt(this.dataset.index));
+            startSlideshow();
+        });
+    });
+
+    startSlideshow();
+})();
+</script>
