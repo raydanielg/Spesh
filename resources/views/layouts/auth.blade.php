@@ -65,7 +65,8 @@
 
     {{-- Auth Background --}}
     <div class="fixed inset-0 z-0 overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-navy-800 via-navy-700 to-navy-600"></div>
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('flat-abstract-background-pattern-vector_822782-866.jpg') }}');"></div>
+        <div class="absolute inset-0 bg-gradient-to-br from-navy-800/85 via-navy-700/80 to-navy-600/75"></div>
         <div class="absolute top-0 left-0 w-96 h-96 bg-gold-500/10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-400/10 rounded-full blur-3xl"></div>
     </div>
