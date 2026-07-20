@@ -36,9 +36,9 @@
 
             {{-- Left: Text --}}
             <div class="text-center lg:text-left fade-in-up">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
-                    <span class="w-2 h-2 rounded-full bg-spesh-green animate-pulse"></span>
-                    <span class="font-heading text-xs font-medium text-white/90 tracking-wide">Regional Leader in Logistics</span>
+                <div class="inline-flex items-center gap-2 px-4 py-2 mb-6 border-2 border-spesh-green/40 bg-spesh-green/5 backdrop-blur-sm">
+                    <span class="w-2 h-2 bg-spesh-green animate-pulse"></span>
+                    <span class="font-heading text-xs font-bold text-white tracking-wide uppercase">Regional Leader in Logistics</span>
                 </div>
 
                 <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6 drop-shadow-lg">
@@ -53,12 +53,12 @@
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <a href="#services" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-heading font-semibold text-white bg-gradient-to-r from-spesh-green to-spesh-green-dark hover:from-spesh-green-light hover:to-spesh-green shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+                        <i class="fas fa-arrow-right text-sm"></i>
                         Explore Services
                     </a>
                     <a href="{{ route('quote') }}" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-xl font-heading font-semibold text-spesh-navy bg-white hover:bg-spesh-gray shadow-lg hover:shadow-xl transition-all hover:scale-[1.02]">
-                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-                        Contact Us
+                        <i class="fas fa-file-invoice-dollar text-sm"></i>
+                        Get Quote
                     </a>
                 </div>
 
@@ -100,7 +100,7 @@
                     <div class="absolute -top-4 -right-4 bg-white rounded-2xl shadow-xl px-4 py-3 float-y">
                         <div class="flex items-center gap-2">
                             <div class="w-10 h-10 rounded-xl bg-spesh-green/10 flex items-center justify-center">
-                                <svg class="w-5 h-5 text-spesh-green" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                                <i class="fas fa-file-shield text-spesh-green"></i>
                             </div>
                             <div>
                                 <p class="font-heading font-bold text-xs text-spesh-navy">TRA Registered</p>
@@ -112,7 +112,7 @@
                     <div class="absolute -bottom-4 -left-4 bg-white rounded-2xl shadow-xl px-4 py-3 float-y" style="animation-delay:1.5s;">
                         <div class="flex items-center gap-2">
                             <div class="w-10 h-10 rounded-xl bg-spesh-ocean/10 flex items-center justify-center">
-                                <svg class="w-5 h-5 text-spesh-ocean" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+                                <i class="fas fa-certificate text-spesh-ocean"></i>
                             </div>
                             <div>
                                 <p class="font-heading font-bold text-xs text-spesh-navy">TASAC Certified</p>
