@@ -1,2 +1,9 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /home
+Disallow: /login
+Disallow: /register
+Disallow: /password/*
+Disallow: /api/*
+
+Sitemap: {{ config('app.url') }}/sitemap.xml

@@ -13,3 +13,7 @@ Route::get('/quote', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/sitemap.xml', function () {
+    return response()->view('sitemap.index')->header('Content-Type', 'text/xml');
+})->name('sitemap');
