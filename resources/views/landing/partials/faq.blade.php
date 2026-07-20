@@ -22,38 +22,41 @@
             </p>
         </div>
 
-        {{-- FAQ Items --}}
-        <div class="space-y-4">
+        {{-- FAQ Items as Stepper --}}
+        <ol class="relative text-spesh-body border-s border-gray-200">
             @php
                 $faqs = [
-                    ['q' => 'What services does SPESH Company Limited offer?', 'a' => 'We offer a comprehensive range of logistics services including customs clearing, freight forwarding (sea, air, road, and rail), project logistics, warehousing, small parcel and loose cargo handling, insurance and bonds, as well as general trading of ICT, electrical, mechanical, and telecom equipment.'],
-                    ['q' => 'How long does the customs clearing process take?', 'a' => 'Typically, customs clearing takes 24-48 hours for standard shipments, provided all documentation is complete and accurate. Our experienced TRA-licensed agents work diligently to ensure the fastest possible clearance times.'],
-                    ['q' => 'Are you licensed and certified?', 'a' => 'Yes, we are fully licensed and certified. We hold a BRELA Certificate of Incorporation, TRA Customs Agent\'s Licence, TASAC Certificate of Registration, TAFFA Membership, and all required municipal and tax compliance documents.'],
-                    ['q' => 'Do you provide insurance for shipments?', 'a' => 'Absolutely. We offer comprehensive cargo insurance and customs bonds to protect your shipments throughout the entire logistics process. Our TASAC-certified operations ensure full compliance and protection.'],
-                    ['q' => 'Can you handle project logistics and oversized cargo?', 'a' => 'Yes, project logistics is one of our core specialties. We have the expertise and equipment to handle oversized, heavy-lift, and complex project cargo, including planning, route surveys, and multi-modal transport solutions.'],
-                    ['q' => 'How can I get a quote for my shipment?', 'a' => 'You can request a quote by filling out our online quote form, calling us directly at +255 22 211 1744 or +255 699 459 191, or emailing us at info@spesh.co.tz. Our team typically responds within 24 hours with a tailored quote.'],
-                    ['q' => 'Do you operate outside Tanzania?', 'a' => 'While we are headquartered in Dar es Salaam, Tanzania, we handle international freight forwarding across the East African region and beyond, including imports and exports through major ports and border crossings.'],
+                    ['q' => 'What services does SPESH Company Limited offer?', 'a' => 'We offer a comprehensive range of logistics services including customs clearing, freight forwarding (sea, air, road, and rail), project logistics, warehousing, small parcel and loose cargo handling, insurance and bonds, as well as general trading of ICT, electrical, mechanical, and telecom equipment.', 'icon' => 'fa-circle-question'],
+                    ['q' => 'How long does the customs clearing process take?', 'a' => 'Typically, customs clearing takes 24-48 hours for standard shipments, provided all documentation is complete and accurate. Our experienced TRA-licensed agents work diligently to ensure the fastest possible clearance times.', 'icon' => 'fa-clock'],
+                    ['q' => 'Are you licensed and certified?', 'a' => 'Yes, we are fully licensed and certified. We hold a BRELA Certificate of Incorporation, TRA Customs Agent\'s Licence, TASAC Certificate of Registration, TAFFA Membership, and all required municipal and tax compliance documents.', 'icon' => 'fa-certificate'],
+                    ['q' => 'Do you provide insurance for shipments?', 'a' => 'Absolutely. We offer comprehensive cargo insurance and customs bonds to protect your shipments throughout the entire logistics process. Our TASAC-certified operations ensure full compliance and protection.', 'icon' => 'fa-shield-halved'],
+                    ['q' => 'Can you handle project logistics and oversized cargo?', 'a' => 'Yes, project logistics is one of our core specialties. We have the expertise and equipment to handle oversized, heavy-lift, and complex project cargo, including planning, route surveys, and multi-modal transport solutions.', 'icon' => 'fa-tower-cell'],
+                    ['q' => 'How can I get a quote for my shipment?', 'a' => 'You can request a quote by filling out our online quote form, calling us directly at +255 22 211 1744 or +255 699 459 191, or emailing us at info@spesh.co.tz. Our team typically responds within 24 hours with a tailored quote.', 'icon' => 'fa-file-invoice-dollar'],
+                    ['q' => 'Do you operate outside Tanzania?', 'a' => 'While we are headquartered in Dar es Salaam, Tanzania, we handle international freight forwarding across the East African region and beyond, including imports and exports through major ports and border crossings.', 'icon' => 'fa-globe'],
                 ];
             @endphp
 
             @foreach($faqs as $index => $faq)
-                <div class="faq-item reveal bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition-all overflow-hidden">
-                    <button class="faq-toggle w-full flex items-center justify-between gap-4 p-5 text-left group" onclick="toggleFaq({{ $index }})">
-                        <span class="font-heading font-semibold text-sm sm:text-base text-spesh-navy group-hover:text-spesh-green transition-colors">{{ $faq['q'] }}</span>
-                        <div class="faq-icon flex-shrink-0 w-8 h-8 rounded-lg bg-spesh-green/10 flex items-center justify-center transition-all duration-300">
-                            <svg class="w-4 h-4 text-spesh-green transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-                        </div>
-                    </button>
-                    <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="faq-content-{{ $index }}">
-                        <div class="p-5 pt-0">
-                            <div class="border-t border-gray-100 pt-4">
+                <li class="mb-10 ms-7 group reveal" style="transition-delay: {{ $index * 0.1 }}s;">
+                    <span class="absolute flex items-center justify-center w-8 h-8 rounded-full -start-4 ring-4 ring-gray-50 bg-spesh-green/10 text-spesh-green group-hover:bg-spesh-green group-hover:text-white transition-all duration-300 group-hover:scale-110 shadow-sm">
+                        <i class="fas {{ $faq['icon'] }} text-sm"></i>
+                    </span>
+                    <div class="faq-item bg-white rounded-xl p-5 shadow-sm border border-gray-100 group-hover:border-spesh-green/30 group-hover:shadow-lg transition-all duration-300 overflow-hidden">
+                        <button class="faq-toggle w-full flex items-center justify-between gap-4 text-left" onclick="toggleFaq({{ $index }})">
+                            <h3 class="font-heading font-semibold text-sm sm:text-base text-spesh-navy group-hover:text-spesh-green transition-colors leading-tight">{{ $faq['q'] }}</h3>
+                            <div class="faq-icon flex-shrink-0 w-7 h-7 rounded-lg bg-spesh-green/10 flex items-center justify-center transition-all duration-300">
+                                <i class="fas fa-chevron-down text-xs text-spesh-green transition-transform duration-300" id="faq-icon-{{ $index }}"></i>
+                            </div>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out" id="faq-content-{{ $index }}">
+                            <div class="pt-4 mt-4 border-t border-gray-100">
                                 <p class="font-body text-sm text-spesh-body leading-relaxed">{{ $faq['a'] }}</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </li>
             @endforeach
-        </div>
+        </ol>
 
         {{-- CTA --}}
         <div class="reveal text-center mt-12" style="transition-delay:0.2s;">
