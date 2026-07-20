@@ -8,7 +8,8 @@
     @include('landing.partials.about')
     @include('landing.partials.services')
     @include('landing.partials.clients')
-    @include('landing.partials.certifications')
+    @include('landing.partials.why-choose-us')
+    @include('landing.partials.faq')
     @include('landing.partials.contact')
     @include('landing.partials.footer')
 @endsection
