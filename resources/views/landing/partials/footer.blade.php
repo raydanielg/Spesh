@@ -11,16 +11,8 @@
 
             {{-- Brand --}}
             <div class="lg:col-span-1">
-                <div class="flex items-center gap-2 mb-4">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-spesh-green to-spesh-green-dark flex items-center justify-center shadow-md">
-                        <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M12 2C8 6 6 10 6 14a6 6 0 0012 0c0-4-2-8-6-12z" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
-                    <div class="flex flex-col leading-none">
-                        <span class="font-heading font-extrabold text-lg text-white tracking-tight">SPESH</span>
-                        <span class="font-heading font-light text-[10px] text-spesh-gray tracking-widest uppercase">Company Limited</span>
-                    </div>
+                <div class="flex items-center mb-4">
+                    <img src="{{ asset('logo.png') }}" alt="SPESH Company Limited" class="h-14 w-auto object-contain brightness-0 invert">
                 </div>
                 <p class="font-body text-sm text-white/50 leading-relaxed mb-4">
                     A regional leader in logistics — professionalism, innovation, and outstanding customer experience.

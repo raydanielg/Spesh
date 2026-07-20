@@ -3,17 +3,8 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16 lg:h-20">
             {{-- Logo --}}
-            <a href="{{ url('/') }}" class="flex items-center gap-2 group">
-                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-spesh-green to-spesh-green-dark flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
-                    <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M12 2C8 6 6 10 6 14a6 6 0 0012 0c0-4-2-8-6-12z" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 22c-3-4-4-7-4-10" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
-                    </svg>
-                </div>
-                <div class="flex flex-col leading-none">
-                    <span class="font-heading font-extrabold text-lg text-spesh-navy tracking-tight">SPESH</span>
-                    <span class="font-heading font-light text-[10px] text-spesh-ocean tracking-widest uppercase">Company Limited</span>
-                </div>
+            <a href="{{ url('/') }}" class="flex items-center group">
+                <img src="{{ asset('logo.png') }}" alt="SPESH Company Limited" class="h-12 lg:h-14 w-auto object-contain group-hover:scale-105 transition-transform duration-300">
             </a>
 
             {{-- Desktop Nav --}}
