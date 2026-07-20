@@ -1,6 +1,10 @@
 @extends('layouts.landing')
 
 @section('title', 'Get a Quote — SPESH Company Limited')
+@section('meta-description', 'Request a free logistics quote from SPESH Company Limited. Customs clearing, freight forwarding, project logistics, warehousing & more. Get a response within 24 hours.')
+@section('meta-keywords', 'logistics quote Tanzania, freight quote Dar es Salaam, customs clearing quote, shipping quote, cargo quote, SPESH quote')
+@section('og-title', 'Get a Free Logistics Quote — SPESH Company Limited')
+@section('og-description', 'Request a tailored quote for customs clearing, freight forwarding, project logistics & more. Response within 24 hours.')
 
 @section('content')
     @include('landing.partials.navbar')
