@@ -78,18 +78,6 @@
 
             {{-- Left Column: Branding + Features (hidden on mobile) --}}
             <div class="hidden lg:flex flex-col justify-center relative overflow-hidden rounded-3xl h-[600px] shadow-2xl bg-gradient-to-br from-navy-800 to-navy-700">
-                {{-- Background image carousel --}}
-                @php
-                    $authImages = ['1380.jpg', '1374 (1).jpg', '735 (1).jpg', '24177.jpg'];
-                @endphp
-                @foreach($authImages as $i => $img)
-                    <div class="auth-bg absolute inset-0 bg-cover bg-center transition-opacity duration-[2000ms] {{ $i === 0 ? 'opacity-100' : 'opacity-0' }}" style="background-image: url('{{ asset($img) }}');" data-index="{{ $i }}"></div>
-                @endforeach
-
-                {{-- Gradient overlay for readability --}}
-                <div class="absolute inset-0 bg-gradient-to-br from-navy-800/80 via-navy-700/70 to-navy-600/60"></div>
-                <div class="absolute inset-0 bg-gradient-to-t from-navy-800/90 via-transparent to-navy-800/40"></div>
-
                 {{-- Decorative dots --}}
                 <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(rgba(255,255,255,0.2) 1px, transparent 1px); background-size: 24px 24px;"></div>
                 <div class="absolute top-0 right-0 w-72 h-72 bg-gold-500/15 rounded-full blur-3xl pulse-glow"></div>
@@ -97,15 +85,10 @@
 
                 {{-- Content --}}
                 <div class="relative z-10 p-12 flex flex-col justify-center h-full">
-                    {{-- Logo --}}
-                    <div class="flex items-center gap-3 mb-8 slide-up">
-                        <div class="w-16 h-16 rounded-xl bg-white/10 backdrop-blur-sm flex items-center justify-center p-2">
-                            <img src="{{ asset('logo.png') }}" alt="SPESH Company Limited" class="w-full h-full object-contain">
-                        </div>
-                        <div>
-                            <h1 class="text-2xl font-extrabold text-white tracking-tight">SPESH</h1>
-                            <p class="text-gold-300 text-sm font-medium">Company Limited</p>
-                        </div>
+                    {{-- Brand name --}}
+                    <div class="mb-8 slide-up">
+                        <h1 class="text-3xl font-extrabold text-white tracking-tight">SPESH</h1>
+                        <p class="text-gold-300 text-sm font-medium mt-1">Company Limited</p>
                     </div>
 
                     {{-- Animated Headlines --}}
