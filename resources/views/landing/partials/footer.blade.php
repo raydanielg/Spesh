@@ -49,20 +49,26 @@
 
             {{-- Services --}}
             <div>
-                <h4 class="font-heading font-bold text-sm text-white mb-4 uppercase tracking-wide">Our Services</h4>
-                <ul class="space-y-2">
-                    <li><a href="#services" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Customs Clearing</a></li>
-                    <li><a href="#services" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Freight Forwarding</a></li>
-                    <li><a href="#services" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Project Logistics</a></li>
-                    <li><a href="#services" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Warehousing</a></li>
-                    <li><a href="#services" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">Insurance & Bonds</a></li>
-                    <li><a href="#services" class="font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors">General Trading</a></li>
+                <h4 class="font-heading font-bold text-sm text-white mb-5 uppercase tracking-wide flex items-center gap-2">
+                    Our Services
+                    <span class="h-0.5 w-8 bg-gradient-to-r from-spesh-purple to-spesh-purple-light rounded-full"></span>
+                </h4>
+                <ul class="space-y-2.5">
+                    <li><a href="#services" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-purple opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Customs Clearing</a></li>
+                    <li><a href="#services" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-purple opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Freight Forwarding</a></li>
+                    <li><a href="#services" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-purple opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Project Logistics</a></li>
+                    <li><a href="#services" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-purple opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Warehousing</a></li>
+                    <li><a href="#services" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-purple opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>Insurance & Bonds</a></li>
+                    <li><a href="#services" class="group font-body text-sm text-white/50 hover:text-spesh-green-light transition-colors flex items-center gap-1.5"><span class="text-spesh-purple opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">›</span>General Trading</a></li>
                 </ul>
             </div>
 
             {{-- Contact --}}
             <div>
-                <h4 class="font-heading font-bold text-sm text-white mb-4 uppercase tracking-wide">Contact Info</h4>
+                <h4 class="font-heading font-bold text-sm text-white mb-5 uppercase tracking-wide flex items-center gap-2">
+                    Contact Info
+                    <span class="h-0.5 w-8 bg-gradient-to-r from-spesh-ocean to-spesh-steel rounded-full"></span>
+                </h4>
                 <ul class="space-y-3">
                     <li class="flex items-start gap-2">
                         <svg class="w-4 h-4 text-spesh-green-light flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
