@@ -160,39 +160,39 @@
     <style>
         .toastify {
             font-family: 'Nunito', sans-serif !important;
-            border-radius: 12px !important;
-            box-shadow: 0 10px 40px -10px rgba(0,0,0,0.2) !important;
-            padding: 14px 18px !important;
-            min-width: 300px !important;
-            max-width: 380px !important;
+            border-radius: 8px !important;
+            box-shadow: 0 6px 24px -8px rgba(0,0,0,0.25) !important;
+            padding: 10px 14px !important;
+            min-width: 240px !important;
+            max-width: 320px !important;
         }
         .toastify-colse-btn {
-            opacity: 0.6 !important;
+            opacity: 0.5 !important;
             transition: opacity 0.2s !important;
         }
         .toastify-colse-btn:hover { opacity: 1 !important; }
         .toastify-title {
-            font-weight: 800 !important;
-            font-size: 14px !important;
-            margin-bottom: 2px !important;
+            font-weight: 700 !important;
+            font-size: 13px !important;
+            margin-bottom: 1px !important;
         }
         .toastify-message {
             font-weight: 500 !important;
-            font-size: 13px !important;
-            opacity: 0.9 !important;
+            font-size: 12px !important;
+            opacity: 0.85 !important;
         }
         .toastify-icon {
-            width: 22px !important;
-            height: 22px !important;
+            width: 16px !important;
+            height: 16px !important;
             flex-shrink: 0 !important;
         }
         .toastify-progress {
             position: absolute !important;
             bottom: 0 !important;
             left: 0 !important;
-            height: 3px !important;
-            border-radius: 0 0 0 12px !important;
-            opacity: 0.7 !important;
+            height: 2px !important;
+            border-radius: 0 0 0 8px !important;
+            opacity: 0.6 !important;
         }
         @keyframes toastProgress {
             from { width: 100%; }
