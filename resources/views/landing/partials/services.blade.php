@@ -22,85 +22,85 @@
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
             {{-- Customs Clearing --}}
-            <div class="reveal group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl border border-gray-50 transition-all hover:-translate-y-1">
-                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-spesh-green to-spesh-green-dark flex items-center justify-center shadow-lg mb-5 group-hover:scale-110 transition-transform">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1">
+                <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-green group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Customs Clearing</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">TRA-registered Clearing Agent since 2021. Handling sea & air shipments across all Tanzanian ports and borders.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-spesh-green/10 text-spesh-green text-xs font-semibold">Sea Freight</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-green/10 text-spesh-green text-xs font-semibold">Air Freight</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-green/10 text-spesh-green text-xs font-semibold">All Ports</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-green/10 text-spesh-green text-xs font-semibold">Sea Freight</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-green/10 text-spesh-green text-xs font-semibold">Air Freight</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-green/10 text-spesh-green text-xs font-semibold">All Ports</span>
                 </div>
             </div>
 
             {{-- Freight Forwarding --}}
-            <div class="reveal group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl border border-gray-50 transition-all hover:-translate-y-1" style="transition-delay:0.1s;">
-                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-spesh-ocean to-spesh-ocean-dark flex items-center justify-center shadow-lg mb-5 group-hover:scale-110 transition-transform">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+            <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.1s;">
+                <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-ocean group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 16V8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2zM14 10h3l2 2v2M5 18a2 2 0 104 0M15 18a2 2 0 104 0"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Freight Forwarding</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Air freight, ocean freight, and inland transport (road & rail). Partnering with major shipping lines worldwide.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-spesh-ocean/10 text-spesh-ocean text-xs font-semibold">Maersk</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-ocean/10 text-spesh-ocean text-xs font-semibold">Hapag-Lloyd</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-ocean/10 text-spesh-ocean text-xs font-semibold">+10 more</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-ocean/10 text-spesh-ocean text-xs font-semibold">Maersk</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-ocean/10 text-spesh-ocean text-xs font-semibold">Hapag-Lloyd</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-ocean/10 text-spesh-ocean text-xs font-semibold">+10 more</span>
                 </div>
             </div>
 
             {{-- Project Logistics --}}
-            <div class="reveal group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl border border-gray-50 transition-all hover:-translate-y-1" style="transition-delay:0.2s;">
-                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-spesh-purple to-spesh-purple-dark flex items-center justify-center shadow-lg mb-5 group-hover:scale-110 transition-transform">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.2s;">
+                <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-purple group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17v-2m3 2v-4m3 4v-6m-6 6h12a2 2 0 002-2V7a2 2 0 00-2-2H6a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Project Logistics</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Survey, planning, monitoring, insurance, and customs clearance for oil/gas/energy, dangerous goods, heavy lift, and more.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-spesh-purple/10 text-spesh-purple text-xs font-semibold">Oil & Gas</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-purple/10 text-spesh-purple text-xs font-semibold">Heavy Lift</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-purple/10 text-spesh-purple text-xs font-semibold">Ro/Ro</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-purple/10 text-spesh-purple text-xs font-semibold">Oil & Gas</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-purple/10 text-spesh-purple text-xs font-semibold">Heavy Lift</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-purple/10 text-spesh-purple text-xs font-semibold">Ro/Ro</span>
                 </div>
             </div>
 
             {{-- Warehousing --}}
-            <div class="reveal group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl border border-gray-50 transition-all hover:-translate-y-1" style="transition-delay:0.3s;">
-                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-spesh-steel to-spesh-ocean flex items-center justify-center shadow-lg mb-5 group-hover:scale-110 transition-transform">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+            <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.3s;">
+                <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-steel group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 7l9-4 9 4M3 7v10a2 2 0 002 2h14a2 2 0 002-2V7M3 7l9 4 9-4M9 21v-6h6v6"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Warehousing</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Free and bonded warehousing facilities for secure storage of your goods while in transit or awaiting clearance.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-spesh-steel/15 text-spesh-ocean text-xs font-semibold">Free Warehouse</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-steel/15 text-spesh-ocean text-xs font-semibold">Bonded</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-steel/15 text-spesh-ocean text-xs font-semibold">Free Warehouse</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-steel/15 text-spesh-ocean text-xs font-semibold">Bonded</span>
                 </div>
             </div>
 
             {{-- Small Parcel / Loose Cargo --}}
-            <div class="reveal group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl border border-gray-50 transition-all hover:-translate-y-1" style="transition-delay:0.4s;">
-                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-spesh-green-light to-spesh-green flex items-center justify-center shadow-lg mb-5 group-hover:scale-110 transition-transform">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+            <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.4s;">
+                <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-green-light group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Small Parcel & Loose Cargo</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Import and export handling for small parcels and loose cargo from China, UAE, and UK.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-spesh-green/10 text-spesh-green text-xs font-semibold">China</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-green/10 text-spesh-green text-xs font-semibold">UAE</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-green/10 text-spesh-green text-xs font-semibold">UK</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-green/10 text-spesh-green text-xs font-semibold">China</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-green/10 text-spesh-green text-xs font-semibold">UAE</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-green/10 text-spesh-green text-xs font-semibold">UK</span>
                 </div>
             </div>
 
             {{-- Insurance & Bonds --}}
-            <div class="reveal group bg-white rounded-2xl p-7 shadow-md hover:shadow-2xl border border-gray-50 transition-all hover:-translate-y-1" style="transition-delay:0.5s;">
-                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-spesh-navy to-spesh-navy-dark flex items-center justify-center shadow-lg mb-5 group-hover:scale-110 transition-transform">
-                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            <div class="reveal group bg-white rounded-xl p-7 shadow-sm hover:shadow-lg border border-gray-100 transition-all duration-300 hover:-translate-y-1" style="transition-delay:0.5s;">
+                <div class="w-12 h-12 flex items-center justify-center mb-5 text-spesh-navy group-hover:scale-110 transition-transform duration-300">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L4 6v6c0 5 3.5 9 8 10 4.5-1 8-5 8-10V6l-8-4zM12 8v4M12 14h.01"/></svg>
                 </div>
                 <h3 class="font-heading font-bold text-lg text-spesh-navy mb-2">Insurance & Bonds</h3>
                 <p class="font-body text-sm text-spesh-body leading-relaxed mb-4">Motor, Fire, Home, Marine, Engineering, GIT insurance. Customs Bonds (CB1–CB12), Performance & Bid/Tender Bonds.</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 rounded-full bg-spesh-navy/10 text-spesh-navy text-xs font-semibold">Marine</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-navy/10 text-spesh-navy text-xs font-semibold">Customs Bonds</span>
-                    <span class="px-3 py-1 rounded-full bg-spesh-navy/10 text-spesh-navy text-xs font-semibold">GIT</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-navy/10 text-spesh-navy text-xs font-semibold">Marine</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-navy/10 text-spesh-navy text-xs font-semibold">Customs Bonds</span>
+                    <span class="px-3 py-1 rounded-md bg-spesh-navy/10 text-spesh-navy text-xs font-semibold">GIT</span>
                 </div>
             </div>
         </div>
