@@ -159,11 +159,11 @@
         @keyframes logoPulse { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.08); opacity:0.8; } }
         @keyframes loaderRing { 0% { transform:rotate(0deg); } 100% { transform:rotate(360deg); } }
         @keyframes loaderFadeOut { to { opacity:0; visibility:hidden; } }
-        .page-loader { position:fixed; inset:0; z-index:99999; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#302740; transition:opacity 0.5s ease, visibility 0.5s ease; }
+        .page-loader { position:fixed; inset:0; z-index:99999; display:flex; flex-direction:column; align-items:center; justify-content:center; background:#ffffff; transition:opacity 0.5s ease, visibility 0.5s ease; }
         .page-loader.loaded { animation: loaderFadeOut 0.5s ease forwards; }
         .loader-logo { animation: logoPulse 1.5s ease-in-out infinite; }
-        .loader-ring { position:absolute; width:100px; height:100px; border:3px solid rgba(26,130,81,0.2); border-top-color:#1A8251; border-radius:50%; animation: loaderRing 1s linear infinite; }
-        .loader-text { margin-top:20px; font-family:'Nunito',sans-serif; font-size:13px; font-weight:600; color:#1A8251; letter-spacing:2px; text-transform:uppercase; }
+        .loader-ring { position:absolute; width:100px; height:100px; border:3px solid rgba(26,130,81,0.15); border-top-color:#1A8251; border-radius:50%; animation: loaderRing 1s linear infinite; }
+        .loader-text { margin-top:20px; font-family:'Nunito',sans-serif; font-size:13px; font-weight:700; color:#302740; letter-spacing:2px; text-transform:uppercase; }
     </style>
 </head>
 <body class="bg-white overflow-x-hidden antialiased">
