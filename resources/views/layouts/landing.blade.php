@@ -39,27 +39,28 @@
     <meta name="twitter:image:alt" content="SPESH Company Limited Logo">
 
     {{-- Structured Data --}}
-    <script type="application/ld+json">
-    @json([
-        '@context' => 'https://schema.org',
-        '@type' => 'Organization',
-        'name' => 'SPESH Company Limited',
-        'url' => config('app.url'),
-        'logo' => asset('logo.png'),
-        'description' => 'Regional leader in logistics — customs clearing, freight forwarding, project logistics, warehousing, insurance & bonds.',
-        'address' => [
-            '@type' => 'PostalAddress',
-            'streetAddress' => 'Samora House, 7th Floor',
-            'addressLocality' => 'Dar es Salaam',
-            'addressCountry' => 'TZ',
-            'postalCode' => '60166 PSSSF',
-        ],
-        'telephone' => ['+255222111744', '+255699459191'],
-        'email' => 'info@spesh.co.tz',
-        'foundingDate' => '2021',
-        'sameAs' => [],
-    ])
-    </script>
+    @php
+        $orgSchema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Organization',
+            'name' => 'SPESH Company Limited',
+            'url' => config('app.url'),
+            'logo' => asset('logo.png'),
+            'description' => 'Regional leader in logistics — customs clearing, freight forwarding, project logistics, warehousing, insurance & bonds.',
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => 'Samora House, 7th Floor',
+                'addressLocality' => 'Dar es Salaam',
+                'addressCountry' => 'TZ',
+                'postalCode' => '60166 PSSSF',
+            ],
+            'telephone' => ['+255222111744', '+255699459191'],
+            'email' => 'info@spesh.co.tz',
+            'foundingDate' => '2021',
+            'sameAs' => [],
+        ];
+    @endphp
+    <script type="application/ld+json">{!! json_encode($orgSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}</script>
 
     {{-- Fonts --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
