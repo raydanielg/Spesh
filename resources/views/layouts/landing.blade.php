@@ -40,25 +40,25 @@
 
     {{-- Structured Data --}}
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "SPESH Company Limited",
-        "url": "{{ config('app.url') }}",
-        "logo": "{{ asset('logo.png') }}",
-        "description": "Regional leader in logistics — customs clearing, freight forwarding, project logistics, warehousing, insurance & bonds.",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Samora House, 7th Floor",
-            "addressLocality": "Dar es Salaam",
-            "addressCountry": "TZ",
-            "postalCode": "60166 PSSSF"
-        },
-        "telephone": ["+255222111744", "+255699459191"],
-        "email": "info@spesh.co.tz",
-        "foundingDate": "2021",
-        "sameAs": []
-    }
+    @json([
+        '@context' => 'https://schema.org',
+        '@type' => 'Organization',
+        'name' => 'SPESH Company Limited',
+        'url' => config('app.url'),
+        'logo' => asset('logo.png'),
+        'description' => 'Regional leader in logistics — customs clearing, freight forwarding, project logistics, warehousing, insurance & bonds.',
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => 'Samora House, 7th Floor',
+            'addressLocality' => 'Dar es Salaam',
+            'addressCountry' => 'TZ',
+            'postalCode' => '60166 PSSSF',
+        ],
+        'telephone' => ['+255222111744', '+255699459191'],
+        'email' => 'info@spesh.co.tz',
+        'foundingDate' => '2021',
+        'sameAs' => [],
+    ])
     </script>
 
     {{-- Fonts --}}
