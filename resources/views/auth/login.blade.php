@@ -7,12 +7,11 @@
     <div class="bg-white rounded-none sm:rounded-2xl shadow-none sm:shadow-xl border-0 sm:border border-gray-100 overflow-hidden min-h-screen sm:min-h-0">
         {{-- Header --}}
         <div class="px-6 sm:px-8 py-8 text-center border-b border-gray-100">
-            <div class="w-16 h-16 mx-auto mb-3 rounded-2xl bg-gradient-to-br from-navy-700 to-navy-800 flex items-center justify-center shadow-lg">
-                <svg class="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            <div class="w-20 h-20 mx-auto mb-4 rounded-2xl bg-white shadow-lg flex items-center justify-center p-2">
+                <img src="{{ asset('logo.png') }}" alt="SPESH Company Limited" class="w-full h-full object-contain">
             </div>
             <h2 class="text-2xl font-extrabold text-gray-800">Welcome Back</h2>
-            <p class="text-gray-400 text-sm mt-1">Sign in to your {{ config('app.name', 'SPESH') }} account</p>
-            <p class="text-emerald-600 text-xs font-semibold mt-2 tracking-wide">Smart Platform for Education & Services Hub</p>
+            <p class="text-gray-400 text-sm mt-1">Sign in to your SPESH account</p>
         </div>
 
         {{-- Form --}}
@@ -74,18 +73,6 @@
                     <span>Sign In</span>
                 </button>
             </form>
-
-            {{-- Divider --}}
-            <div class="relative my-6">
-                <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-gray-200"></div></div>
-                <div class="relative flex justify-center text-sm"><span class="px-3 bg-white text-gray-400">or</span></div>
-            </div>
-
-            {{-- Register link --}}
-            <p class="text-center text-sm text-gray-500">
-                Don't have an account?
-                <a href="{{ route('register') }}" class="font-semibold text-emerald-600 hover:text-emerald-700 transition-colors">Create account</a>
-            </p>
         </div>
     </div>
 
