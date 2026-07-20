@@ -277,25 +277,5 @@
     })();
     </script>
 
-    {{-- Auth Background Carousel --}}
-    <script>
-    (function() {
-        const slides = document.querySelectorAll('.auth-bg');
-        if (slides.length <= 1) return;
-
-        let current = 0;
-
-        function nextSlide() {
-            slides.forEach(function(s, i) {
-                s.classList.toggle('opacity-100', i === current);
-                s.classList.toggle('opacity-0', i !== current);
-            });
-            current = (current + 1) % slides.length;
-        }
-
-        setInterval(nextSlide, 5000);
-    })();
-    </script>
-
 </body>
 </html>
