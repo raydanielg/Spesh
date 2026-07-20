@@ -146,28 +146,112 @@
 <script>
 (function() {
     const form = document.getElementById('contactForm');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            const btn = form.querySelector('button[type="submit"]');
-            const originalText = btn.innerHTML;
-            btn.innerHTML = '<svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg> Sending...';
-            btn.disabled = true;
+    if (!form) return;
 
-            setTimeout(function() {
+    const submitBtn = document.getElementById('contactSubmit');
+    const originalBtnHTML = submitBtn.innerHTML;
+    const inputs = form.querySelectorAll('.contact-input');
+    const errorEls = form.querySelectorAll('.contact-error');
+
+    function clearErrors() {
+        errorEls.forEach(function(el) { el.classList.add('hidden'); el.textContent = ''; });
+        inputs.forEach(function(el) {
+            el.classList.remove('border-red-300', 'ring-2', 'ring-red-100');
+            el.classList.add('border-gray-200');
+        });
+    }
+
+    function showError(field, message) {
+        const errorEl = form.querySelector('[data-field="' + field + '"]') || form.querySelector('#contact-' + field.replace('_', '-'))?.parentElement.nextElementSibling;
+        const input = form.querySelector('[name="' + field + '"]');
+        if (input) {
+            input.classList.remove('border-gray-200');
+            input.classList.add('border-red-300', 'ring-2', 'ring-red-100');
+        }
+        const errEl = input?.closest('div').parentElement.querySelector('.contact-error');
+        if (errEl) {
+            errEl.textContent = message;
+            errEl.classList.remove('hidden');
+        }
+    }
+
+    function setLoading(loading) {
+        if (loading) {
+            submitBtn.innerHTML = '<svg class="animate-spin w-5 h-5" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg><span>Sending...</span>';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+        } else {
+            submitBtn.innerHTML = originalBtnHTML;
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+        }
+    }
+
+    inputs.forEach(function(input) {
+        input.addEventListener('input', function() {
+            this.classList.remove('border-red-300', 'ring-2', 'ring-red-100');
+            this.classList.add('border-gray-200');
+            const errEl = this.closest('div').parentElement.querySelector('.contact-error');
+            if (errEl) errEl.classList.add('hidden');
+        });
+    });
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        clearErrors();
+
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach(function(value, key) { data[key] = value; });
+
+        setLoading(true);
+
+        fetch(form.action || window.location.href, {
+            method: 'POST',
+            headers: {
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || data._token,
+                'X-Requested-With': 'XMLHttpRequest',
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(function(response) { return response.json(); })
+        .then(function(res) {
+            setLoading(false);
+            if (res.success) {
                 Toastify({
-                    text: "Thank you! Your message has been sent. We'll get back to you soon.",
+                    text: res.message || 'Thank you! Your message has been sent. We\'ll get back to you soon.',
                     duration: 5000,
                     gravity: 'top',
                     position: 'right',
                     style: { background: 'linear-gradient(135deg, #1A8251, #0E5C38)' }
                 }).showToast();
                 form.reset();
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-            }, 1500);
+            } else if (res.errors) {
+                Object.keys(res.errors).forEach(function(field) {
+                    showError(field, res.errors[field][0]);
+                });
+                Toastify({
+                    text: 'Please fix the errors above.',
+                    duration: 4000,
+                    gravity: 'top',
+                    position: 'right',
+                    style: { background: 'linear-gradient(135deg, #dc2626, #991b1b)' }
+                }).showToast();
+            }
+        })
+        .catch(function() {
+            setLoading(false);
+            Toastify({
+                text: 'Something went wrong. Please try again or call us directly.',
+                duration: 5000,
+                gravity: 'top',
+                position: 'right',
+                style: { background: 'linear-gradient(135deg, #dc2626, #991b1b)' }
+            }).showToast();
         });
-    }
+    });
 })();
 </script>
 @endpush
