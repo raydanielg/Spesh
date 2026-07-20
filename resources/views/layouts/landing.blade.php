@@ -73,6 +73,10 @@
         .fade-in-up { animation: fadeInUp 0.7s ease-out both; }
         .fade-in { animation: fadeIn 0.8s ease-out both; }
         .float-y { animation: floatY 5s ease-in-out infinite; }
+        .float-card-1 { animation: floatCard1 4s ease-in-out infinite; }
+        .float-card-2 { animation: floatCard2 5s ease-in-out infinite 0.5s; }
+        .float-card-3 { animation: floatCard3 4.5s ease-in-out infinite 1s; }
+        .float-card-4 { animation: floatCard4 5.5s ease-in-out infinite 0.3s; }
         .slide-in-left { animation: slideInLeft 0.7s ease-out both; }
         .slide-in-right { animation: slideInRight 0.7s ease-out both; }
         .gradient-animate { background-size: 200% 200%; animation: gradientShift 8s ease infinite; }
