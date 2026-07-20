@@ -81,3 +81,40 @@
         </div>
     </div>
 </section>
+
+<script>
+(function() {
+    const slides = document.querySelectorAll('.why-slide');
+    const dots = document.querySelectorAll('.why-dot');
+    if (slides.length <= 1) return;
+
+    let current = 0;
+
+    function goTo(index) {
+        slides.forEach(function(s, i) {
+            s.classList.toggle('opacity-100', i === index);
+            s.classList.toggle('opacity-0', i !== index);
+        });
+        dots.forEach(function(d, i) {
+            if (i === index) {
+                d.classList.add('bg-spesh-green-light', 'w-6');
+                d.classList.remove('bg-white/40', 'w-2');
+            } else {
+                d.classList.add('bg-white/40', 'w-2');
+                d.classList.remove('bg-spesh-green-light', 'w-6');
+            }
+        });
+        current = index;
+    }
+
+    dots.forEach(function(dot) {
+        dot.addEventListener('click', function() {
+            goTo(parseInt(this.dataset.index));
+        });
+    });
+
+    setInterval(function() {
+        goTo((current + 1) % slides.length);
+    }, 4000);
+})();
+</script>
