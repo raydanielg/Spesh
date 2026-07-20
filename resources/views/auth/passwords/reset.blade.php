@@ -65,9 +65,15 @@
                 </div>
 
                 {{-- Submit --}}
-                <button type="submit" class="w-full py-3 text-sm font-bold text-gray-900 bg-gradient-to-r from-gold-300 to-gold-400 hover:from-gold-400 hover:to-gold-500 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
-                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-                    Reset Password
+                <button type="submit" id="submitBtn" class="w-full py-3 text-sm font-bold text-gray-900 bg-gradient-to-r from-gold-300 to-gold-400 hover:from-gold-400 hover:to-gold-500 rounded-lg shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                    <span id="btnContent" class="flex items-center gap-2">
+                        <i class="fas fa-check text-sm"></i>
+                        Reset Password
+                    </span>
+                    <span id="btnLoading" class="hidden items-center gap-2">
+                        <svg class="animate-spin w-4 h-4" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path></svg>
+                        Please wait...
+                    </span>
                 </button>
             </form>
         </div>
@@ -75,4 +81,25 @@
 
     <p class="mt-6 text-center text-xs text-gray-400 hidden sm:block">&copy; {{ date('Y') }} {{ config('app.name', 'SPESH') }}. All rights reserved.</p>
 </div>
+
+{{-- Submit Loading Script --}}
+<script>
+(function() {
+    const form = document.querySelector('form');
+    const btn = document.getElementById('submitBtn');
+    const btnContent = document.getElementById('btnContent');
+    const btnLoading = document.getElementById('btnLoading');
+
+    if (form && btn) {
+        form.addEventListener('submit', function() {
+            btn.disabled = true;
+            btn.classList.add('opacity-70', 'cursor-not-allowed');
+            btnContent.classList.add('hidden');
+            btnContent.classList.remove('flex');
+            btnLoading.classList.remove('hidden');
+            btnLoading.classList.add('flex');
+        });
+    }
+})();
+</script>
 @endsection
