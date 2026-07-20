@@ -60,6 +60,10 @@
         @keyframes fadeInUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
         @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
         @keyframes floatY { 0%,100% { transform:translateY(0); } 50% { transform:translateY(-15px); } }
+        @keyframes floatCard1 { 0%,100% { transform:translateY(0) rotate(-2deg); } 50% { transform:translateY(-18px) rotate(-2deg); } }
+        @keyframes floatCard2 { 0%,100% { transform:translateY(0) rotate(1deg); } 50% { transform:translateY(-12px) rotate(1deg); } }
+        @keyframes floatCard3 { 0%,100% { transform:translateY(0) rotate(-1deg); } 50% { transform:translateY(-20px) rotate(-1deg); } }
+        @keyframes floatCard4 { 0%,100% { transform:translateY(0) rotate(2deg); } 50% { transform:translateY(-14px) rotate(2deg); } }
         @keyframes slideInLeft { from { opacity:0; transform:translateX(-40px); } to { opacity:1; transform:translateX(0); } }
         @keyframes slideInRight { from { opacity:0; transform:translateX(40px); } to { opacity:1; transform:translateX(0); } }
         @keyframes pulseRing { 0% { transform:scale(0.95); opacity:0.7; } 70% { transform:scale(1.3); opacity:0; } 100% { opacity:0; } }
